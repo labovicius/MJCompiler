@@ -1,0 +1,2682 @@
+INFO  06:27:48,961 - Kompajliranje ulaznog fajla test\program.mj
+INFO  06:27:49,023 - #2 program
+INFO  06:27:49,023 - #51 semantika
+INFO  06:27:49,023 - #23 const
+INFO  06:27:49,025 - #51 int
+INFO  06:27:49,025 - #51 c1
+INFO  06:27:49,026 - #8 =
+INFO  06:27:49,026 - #48 1
+INFO  06:27:49,026 - #5 ;
+INFO  06:27:49,027 - #23 const
+INFO  06:27:49,029 - #51 char
+INFO  06:27:49,029 - #51 c2
+INFO  06:27:49,029 - #8 =
+INFO  06:27:49,029 - #49 b
+INFO  06:27:49,029 - #15 ,
+INFO  06:27:49,029 - #51 c3
+INFO  06:27:49,029 - #8 =
+INFO  06:27:49,029 - #49 c
+INFO  06:27:49,030 - #5 ;
+INFO  06:27:49,030 - #51 int
+INFO  06:27:49,030 - #51 m
+INFO  06:27:49,030 - #15 ,
+INFO  06:27:49,031 - #51 t
+INFO  06:27:49,031 - #15 ,
+INFO  06:27:49,031 - #51 k
+INFO  06:27:49,032 - #5 ;
+INFO  06:27:49,032 - #51 int
+INFO  06:27:49,033 - #51 niz1
+INFO  06:27:49,033 - #21 [
+INFO  06:27:49,033 - #22 ]
+INFO  06:27:49,033 - #5 ;
+INFO  06:27:49,033 - #51 char
+INFO  06:27:49,033 - #51 niz2
+INFO  06:27:49,033 - #21 [
+INFO  06:27:49,033 - #22 ]
+INFO  06:27:49,033 - #5 ;
+INFO  06:27:49,033 - #51 bool
+INFO  06:27:49,034 - #51 b
+INFO  06:27:49,034 - #5 ;
+INFO  06:27:49,034 - #51 bool
+INFO  06:27:49,034 - #51 niz3
+INFO  06:27:49,034 - #21 [
+INFO  06:27:49,034 - #22 ]
+INFO  06:27:49,034 - #5 ;
+INFO  06:27:49,034 - #3 {
+INFO  06:27:49,034 - #18 void
+INFO  06:27:49,034 - #51 main
+INFO  06:27:49,034 - #6 (
+INFO  06:27:49,034 - #7 )
+INFO  06:27:49,036 - #51 bool
+INFO  06:27:49,036 - #51 b11
+INFO  06:27:49,036 - #5 ;
+INFO  06:27:49,037 - #51 int
+INFO  06:27:49,037 - #51 m11
+INFO  06:27:49,037 - #5 ;
+INFO  06:27:49,037 - #51 char
+INFO  06:27:49,037 - #51 c11
+INFO  06:27:49,037 - #5 ;
+INFO  06:27:49,037 - #51 int
+INFO  06:27:49,037 - #51 niz11
+INFO  06:27:49,037 - #21 [
+INFO  06:27:49,037 - #22 ]
+INFO  06:27:49,037 - #5 ;
+INFO  06:27:49,037 - #3 {
+INFO  06:27:49,037 - #51 niz1
+INFO  06:27:49,038 - #8 =
+INFO  06:27:49,038 - #35 new
+INFO  06:27:49,039 - #51 int
+INFO  06:27:49,040 - #21 [
+INFO  06:27:49,040 - #48 6
+INFO  06:27:49,040 - #22 ]
+INFO  06:27:49,042 - #5 ;
+INFO  06:27:49,042 - #51 niz1
+INFO  06:27:49,042 - #21 [
+INFO  06:27:49,042 - #48 0
+INFO  06:27:49,043 - #22 ]
+INFO  06:27:49,043 - #8 =
+INFO  06:27:49,043 - #11 -
+INFO  06:27:49,043 - #48 3
+INFO  06:27:49,043 - #5 ;
+INFO  06:27:49,043 - #51 niz1
+INFO  06:27:49,043 - #21 [
+INFO  06:27:49,043 - #48 1
+INFO  06:27:49,043 - #22 ]
+INFO  06:27:49,043 - #8 =
+INFO  06:27:49,043 - #48 5
+INFO  06:27:49,043 - #5 ;
+INFO  06:27:49,043 - #51 niz1
+INFO  06:27:49,044 - #21 [
+INFO  06:27:49,044 - #48 1
+INFO  06:27:49,044 - #22 ]
+INFO  06:27:49,044 - #28 ++
+INFO  06:27:49,044 - #5 ;
+INFO  06:27:49,044 - #51 niz1
+INFO  06:27:49,044 - #21 [
+INFO  06:27:49,044 - #48 2
+INFO  06:27:49,044 - #22 ]
+INFO  06:27:49,044 - #8 =
+INFO  06:27:49,044 - #48 2
+INFO  06:27:49,044 - #5 ;
+INFO  06:27:49,044 - #51 niz1
+INFO  06:27:49,044 - #21 [
+INFO  06:27:49,044 - #48 2
+INFO  06:27:49,045 - #22 ]
+INFO  06:27:49,045 - #29 --
+INFO  06:27:49,045 - #5 ;
+INFO  06:27:49,045 - #51 niz1
+INFO  06:27:49,045 - #21 [
+INFO  06:27:49,045 - #48 3
+INFO  06:27:49,045 - #22 ]
+INFO  06:27:49,045 - #8 =
+INFO  06:27:49,045 - #51 niz1
+INFO  06:27:49,045 - #21 [
+INFO  06:27:49,045 - #48 2
+INFO  06:27:49,045 - #22 ]
+INFO  06:27:49,045 - #29 --
+ERROR 06:27:49,045 - 
+Sintaksna greska na liniji 28
+INFO  06:27:49,047 - #5 ;
+INFO  06:27:49,047 - #16 print
+INFO  06:27:49,047 - #6 (
+INFO  06:27:49,047 - #51 niz1
+ERROR 06:27:49,048 - Izvrsen oporavak do ; u liniji 28
+INFO  06:27:49,048 - #21 [
+INFO  06:27:49,048 - #48 1
+INFO  06:27:49,048 - #22 ]
+INFO  06:27:49,048 - #7 )
+INFO  06:27:49,049 - #5 ;
+INFO  06:27:49,049 - #16 print
+INFO  06:27:49,049 - #6 (
+INFO  06:27:49,049 - #51 niz1
+INFO  06:27:49,049 - #21 [
+INFO  06:27:49,049 - #48 2
+INFO  06:27:49,049 - #22 ]
+INFO  06:27:49,049 - #7 )
+INFO  06:27:49,049 - #5 ;
+INFO  06:27:49,049 - #16 print
+INFO  06:27:49,049 - #6 (
+INFO  06:27:49,049 - #51 niz1
+INFO  06:27:49,049 - #21 [
+INFO  06:27:49,049 - #48 3
+INFO  06:27:49,050 - #22 ]
+INFO  06:27:49,050 - #7 )
+INFO  06:27:49,050 - #5 ;
+INFO  06:27:49,050 - #51 m
+INFO  06:27:49,050 - #8 =
+INFO  06:27:49,050 - #48 5
+INFO  06:27:49,050 - #14 %
+INFO  06:27:49,050 - #48 3
+INFO  06:27:49,051 - #5 ;
+INFO  06:27:49,052 - #51 k
+INFO  06:27:49,052 - #8 =
+INFO  06:27:49,052 - #48 3
+INFO  06:27:49,052 - #5 ;
+INFO  06:27:49,052 - #16 print
+INFO  06:27:49,052 - #6 (
+INFO  06:27:49,052 - #51 m
+INFO  06:27:49,052 - #7 )
+INFO  06:27:49,052 - #5 ;
+INFO  06:27:49,052 - #51 m
+INFO  06:27:49,052 - #8 =
+INFO  06:27:49,052 - #48 3
+INFO  06:27:49,052 - #5 ;
+INFO  06:27:49,052 - #51 t
+INFO  06:27:49,052 - #8 =
+INFO  06:27:49,052 - #51 m
+INFO  06:27:49,052 - #44 ??
+INFO  06:27:49,053 - #48 12
+INFO  06:27:49,053 - #5 ;
+INFO  06:27:49,053 - #16 print
+INFO  06:27:49,053 - #6 (
+INFO  06:27:49,053 - #51 t
+INFO  06:27:49,053 - #7 )
+INFO  06:27:49,053 - #5 ;
+INFO  06:27:49,053 - #4 }
+INFO  06:27:49,053 - #4 }
+INFO  06:27:49,055 - =====================SINTAKSNO_STABLO=========================
+INFO  06:27:49,057 - 
+Program(
+  ProgName(
+   semantika
+  ) [ProgName]
+  AllDeclars(
+    AllDeclars(
+      AllDeclars(
+        AllDeclars(
+          AllDeclars(
+            AllDeclars(
+              AllDeclars(
+                NoDeclarations(
+                ) [NoDeclarations]
+                ConstDeclars(
+                  ConstDeclarations(
+                    Type(
+                     int
+                    ) [Type]
+                    ConstDeclar(
+                     c1
+                      ConstDeclarNum(
+                       1
+                      ) [ConstDeclarNum]
+                    ) [ConstDeclar]
+                    NoConstDeclar(
+                    ) [NoConstDeclar]
+                  ) [ConstDeclarations]
+                ) [ConstDeclars]
+              ) [AllDeclars]
+              ConstDeclars(
+                ConstDeclarations(
+                  Type(
+                   char
+                  ) [Type]
+                  ConstDeclar(
+                   c2
+                    ConstDeclarChar(
+                     b
+                    ) [ConstDeclarChar]
+                  ) [ConstDeclar]
+                  ConstDeclarsCh(
+                    NoConstDeclar(
+                    ) [NoConstDeclar]
+                    ConstDeclar(
+                     c3
+                      ConstDeclarChar(
+                       c
+                      ) [ConstDeclarChar]
+                    ) [ConstDeclar]
+                  ) [ConstDeclarsCh]
+                ) [ConstDeclarations]
+              ) [ConstDeclars]
+            ) [AllDeclars]
+            VarDeclars(
+              VarDeclarations(
+                Type(
+                 int
+                ) [Type]
+                VarDeclar(
+                 m
+                ) [VarDeclar]
+                VarDeclarCh(
+                  VarDeclarCh(
+                    NoVarDeclar(
+                    ) [NoVarDeclar]
+                    VarDeclar(
+                     t
+                    ) [VarDeclar]
+                  ) [VarDeclarCh]
+                  VarDeclar(
+                   k
+                  ) [VarDeclar]
+                ) [VarDeclarCh]
+              ) [VarDeclarations]
+            ) [VarDeclars]
+          ) [AllDeclars]
+          VarDeclars(
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              VarDeclarArr(
+               niz1
+              ) [VarDeclarArr]
+              NoVarDeclar(
+              ) [NoVarDeclar]
+            ) [VarDeclarations]
+          ) [VarDeclars]
+        ) [AllDeclars]
+        VarDeclars(
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+            VarDeclarArr(
+             niz2
+            ) [VarDeclarArr]
+            NoVarDeclar(
+            ) [NoVarDeclar]
+          ) [VarDeclarations]
+        ) [VarDeclars]
+      ) [AllDeclars]
+      VarDeclars(
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          VarDeclar(
+           b
+          ) [VarDeclar]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [VarDeclars]
+    ) [AllDeclars]
+    VarDeclars(
+      VarDeclarations(
+        Type(
+         bool
+        ) [Type]
+        VarDeclarArr(
+         niz3
+        ) [VarDeclarArr]
+        NoVarDeclar(
+        ) [NoVarDeclar]
+      ) [VarDeclarations]
+    ) [VarDeclars]
+  ) [AllDeclars]
+  MethodDeclO(
+    MethodDecl(
+      MethodV(
+       main
+      ) [MethodV]
+      MethodPars(
+        NoFormParam(
+        ) [NoFormParam]
+        NoOptionArgs(
+        ) [NoOptionArgs]
+      ) [MethodPars]
+      MethodVarDecl(
+        MethodVarDecl(
+          MethodVarDecl(
+            MethodVarDecl(
+              NoMethodVarDecl(
+              ) [NoMethodVarDecl]
+              VarDeclarations(
+                Type(
+                 bool
+                ) [Type]
+                VarDeclar(
+                 b11
+                ) [VarDeclar]
+                NoVarDeclar(
+                ) [NoVarDeclar]
+              ) [VarDeclarations]
+            ) [MethodVarDecl]
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              VarDeclar(
+               m11
+              ) [VarDeclar]
+              NoVarDeclar(
+              ) [NoVarDeclar]
+            ) [VarDeclarations]
+          ) [MethodVarDecl]
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+            VarDeclar(
+             c11
+            ) [VarDeclar]
+            NoVarDeclar(
+            ) [NoVarDeclar]
+          ) [VarDeclarations]
+        ) [MethodVarDecl]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          VarDeclarArr(
+           niz11
+          ) [VarDeclarArr]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [MethodVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      NoStmt(
+                                      ) [NoStmt]
+                                      MatchedStmt(
+                                        DesStmt(
+                                          DsgStmtEqual(
+                                            DesignatorI(
+                                             niz1
+                                            ) [DesignatorI]
+                                            Assign(
+                                            ) [Assign]
+                                            ExprOne(
+                                              NormalExpression(
+                                                TermFact(
+                                                  NewTypeArr(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    ExprOne(
+                                                      NormalExpression(
+                                                        TermFact(
+                                                          ConstNum(
+                                                           6
+                                                          ) [ConstNum]
+                                                          NoMulopFactorCh(
+                                                          ) [NoMulopFactorCh]
+                                                        ) [TermFact]
+                                                        NoAddopCh(
+                                                        ) [NoAddopCh]
+                                                      ) [NormalExpression]
+                                                    ) [ExprOne]
+                                                  ) [NewTypeArr]
+                                                  NoMulopFactorCh(
+                                                  ) [NoMulopFactorCh]
+                                                ) [TermFact]
+                                                NoAddopCh(
+                                                ) [NoAddopCh]
+                                              ) [NormalExpression]
+                                            ) [ExprOne]
+                                          ) [DsgStmtEqual]
+                                        ) [DesStmt]
+                                      ) [MatchedStmt]
+                                    ) [Statements]
+                                    MatchedStmt(
+                                      DesStmt(
+                                        DsgStmtEqual(
+                                          DesignatorEx(
+                                           niz1
+                                            ExprOne(
+                                              NormalExpression(
+                                                TermFact(
+                                                  ConstNum(
+                                                   0
+                                                  ) [ConstNum]
+                                                  NoMulopFactorCh(
+                                                  ) [NoMulopFactorCh]
+                                                ) [TermFact]
+                                                NoAddopCh(
+                                                ) [NoAddopCh]
+                                              ) [NormalExpression]
+                                            ) [ExprOne]
+                                          ) [DesignatorEx]
+                                          Assign(
+                                          ) [Assign]
+                                          ExprOne(
+                                            MinusExpression(
+                                              TermFact(
+                                                ConstNum(
+                                                 3
+                                                ) [ConstNum]
+                                                NoMulopFactorCh(
+                                                ) [NoMulopFactorCh]
+                                              ) [TermFact]
+                                              NoAddopCh(
+                                              ) [NoAddopCh]
+                                            ) [MinusExpression]
+                                          ) [ExprOne]
+                                        ) [DsgStmtEqual]
+                                      ) [DesStmt]
+                                    ) [MatchedStmt]
+                                  ) [Statements]
+                                  MatchedStmt(
+                                    DesStmt(
+                                      DsgStmtEqual(
+                                        DesignatorEx(
+                                         niz1
+                                          ExprOne(
+                                            NormalExpression(
+                                              TermFact(
+                                                ConstNum(
+                                                 1
+                                                ) [ConstNum]
+                                                NoMulopFactorCh(
+                                                ) [NoMulopFactorCh]
+                                              ) [TermFact]
+                                              NoAddopCh(
+                                              ) [NoAddopCh]
+                                            ) [NormalExpression]
+                                          ) [ExprOne]
+                                        ) [DesignatorEx]
+                                        Assign(
+                                        ) [Assign]
+                                        ExprOne(
+                                          NormalExpression(
+                                            TermFact(
+                                              ConstNum(
+                                               5
+                                              ) [ConstNum]
+                                              NoMulopFactorCh(
+                                              ) [NoMulopFactorCh]
+                                            ) [TermFact]
+                                            NoAddopCh(
+                                            ) [NoAddopCh]
+                                          ) [NormalExpression]
+                                        ) [ExprOne]
+                                      ) [DsgStmtEqual]
+                                    ) [DesStmt]
+                                  ) [MatchedStmt]
+                                ) [Statements]
+                                MatchedStmt(
+                                  DesStmt(
+                                    DsgStmtInc(
+                                      DesignatorEx(
+                                       niz1
+                                        ExprOne(
+                                          NormalExpression(
+                                            TermFact(
+                                              ConstNum(
+                                               1
+                                              ) [ConstNum]
+                                              NoMulopFactorCh(
+                                              ) [NoMulopFactorCh]
+                                            ) [TermFact]
+                                            NoAddopCh(
+                                            ) [NoAddopCh]
+                                          ) [NormalExpression]
+                                        ) [ExprOne]
+                                      ) [DesignatorEx]
+                                    ) [DsgStmtInc]
+                                  ) [DesStmt]
+                                ) [MatchedStmt]
+                              ) [Statements]
+                              MatchedStmt(
+                                DesStmt(
+                                  DsgStmtEqual(
+                                    DesignatorEx(
+                                     niz1
+                                      ExprOne(
+                                        NormalExpression(
+                                          TermFact(
+                                            ConstNum(
+                                             2
+                                            ) [ConstNum]
+                                            NoMulopFactorCh(
+                                            ) [NoMulopFactorCh]
+                                          ) [TermFact]
+                                          NoAddopCh(
+                                          ) [NoAddopCh]
+                                        ) [NormalExpression]
+                                      ) [ExprOne]
+                                    ) [DesignatorEx]
+                                    Assign(
+                                    ) [Assign]
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DsgStmtEqual]
+                                ) [DesStmt]
+                              ) [MatchedStmt]
+                            ) [Statements]
+                            MatchedStmt(
+                              DesStmt(
+                                DsgStmtDec(
+                                  DesignatorEx(
+                                   niz1
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DesignatorEx]
+                                ) [DsgStmtDec]
+                              ) [DesStmt]
+                            ) [MatchedStmt]
+                          ) [Statements]
+                          MatchedStmt(
+                            MatchedDerived1(
+                            ) [MatchedDerived1]
+                          ) [MatchedStmt]
+                        ) [Statements]
+                        MatchedStmt(
+                          PrintStmt(
+                            ExprOne(
+                              NormalExpression(
+                                TermFact(
+                                  Var(
+                                    DesignatorEx(
+                                     niz1
+                                      ExprOne(
+                                        NormalExpression(
+                                          TermFact(
+                                            ConstNum(
+                                             1
+                                            ) [ConstNum]
+                                            NoMulopFactorCh(
+                                            ) [NoMulopFactorCh]
+                                          ) [TermFact]
+                                          NoAddopCh(
+                                          ) [NoAddopCh]
+                                        ) [NormalExpression]
+                                      ) [ExprOne]
+                                    ) [DesignatorEx]
+                                  ) [Var]
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                ) [TermFact]
+                                NoAddopCh(
+                                ) [NoAddopCh]
+                              ) [NormalExpression]
+                            ) [ExprOne]
+                          ) [PrintStmt]
+                        ) [MatchedStmt]
+                      ) [Statements]
+                      MatchedStmt(
+                        PrintStmt(
+                          ExprOne(
+                            NormalExpression(
+                              TermFact(
+                                Var(
+                                  DesignatorEx(
+                                   niz1
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DesignatorEx]
+                                ) [Var]
+                                NoMulopFactorCh(
+                                ) [NoMulopFactorCh]
+                              ) [TermFact]
+                              NoAddopCh(
+                              ) [NoAddopCh]
+                            ) [NormalExpression]
+                          ) [ExprOne]
+                        ) [PrintStmt]
+                      ) [MatchedStmt]
+                    ) [Statements]
+                    MatchedStmt(
+                      PrintStmt(
+                        ExprOne(
+                          NormalExpression(
+                            TermFact(
+                              Var(
+                                DesignatorEx(
+                                 niz1
+                                  ExprOne(
+                                    NormalExpression(
+                                      TermFact(
+                                        ConstNum(
+                                         3
+                                        ) [ConstNum]
+                                        NoMulopFactorCh(
+                                        ) [NoMulopFactorCh]
+                                      ) [TermFact]
+                                      NoAddopCh(
+                                      ) [NoAddopCh]
+                                    ) [NormalExpression]
+                                  ) [ExprOne]
+                                ) [DesignatorEx]
+                              ) [Var]
+                              NoMulopFactorCh(
+                              ) [NoMulopFactorCh]
+                            ) [TermFact]
+                            NoAddopCh(
+                            ) [NoAddopCh]
+                          ) [NormalExpression]
+                        ) [ExprOne]
+                      ) [PrintStmt]
+                    ) [MatchedStmt]
+                  ) [Statements]
+                  MatchedStmt(
+                    DesStmt(
+                      DsgStmtEqual(
+                        DesignatorI(
+                         m
+                        ) [DesignatorI]
+                        Assign(
+                        ) [Assign]
+                        ExprOne(
+                          NormalExpression(
+                            TermFact(
+                              ConstNum(
+                               5
+                              ) [ConstNum]
+                              MulopFactorCho(
+                                NoMulopFactorCh(
+                                ) [NoMulopFactorCh]
+                                Mod(
+                                ) [Mod]
+                                ConstNum(
+                                 3
+                                ) [ConstNum]
+                              ) [MulopFactorCho]
+                            ) [TermFact]
+                            NoAddopCh(
+                            ) [NoAddopCh]
+                          ) [NormalExpression]
+                        ) [ExprOne]
+                      ) [DsgStmtEqual]
+                    ) [DesStmt]
+                  ) [MatchedStmt]
+                ) [Statements]
+                MatchedStmt(
+                  DesStmt(
+                    DsgStmtEqual(
+                      DesignatorI(
+                       k
+                      ) [DesignatorI]
+                      Assign(
+                      ) [Assign]
+                      ExprOne(
+                        NormalExpression(
+                          TermFact(
+                            ConstNum(
+                             3
+                            ) [ConstNum]
+                            NoMulopFactorCh(
+                            ) [NoMulopFactorCh]
+                          ) [TermFact]
+                          NoAddopCh(
+                          ) [NoAddopCh]
+                        ) [NormalExpression]
+                      ) [ExprOne]
+                    ) [DsgStmtEqual]
+                  ) [DesStmt]
+                ) [MatchedStmt]
+              ) [Statements]
+              MatchedStmt(
+                PrintStmt(
+                  ExprOne(
+                    NormalExpression(
+                      TermFact(
+                        Var(
+                          DesignatorI(
+                           m
+                          ) [DesignatorI]
+                        ) [Var]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [ExprOne]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              DesStmt(
+                DsgStmtEqual(
+                  DesignatorI(
+                   m
+                  ) [DesignatorI]
+                  Assign(
+                  ) [Assign]
+                  ExprOne(
+                    NormalExpression(
+                      TermFact(
+                        ConstNum(
+                         3
+                        ) [ConstNum]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [ExprOne]
+                ) [DsgStmtEqual]
+              ) [DesStmt]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            DesStmt(
+              DsgStmtEqual(
+                DesignatorI(
+                 t
+                ) [DesignatorI]
+                Assign(
+                ) [Assign]
+                DQTerm(
+                  LeftQuest(
+                    NormalExpression(
+                      TermFact(
+                        Var(
+                          DesignatorI(
+                           m
+                          ) [DesignatorI]
+                        ) [Var]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [LeftQuest]
+                  RightQuest(
+                    NormalExpression(
+                      TermFact(
+                        ConstNum(
+                         12
+                        ) [ConstNum]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [RightQuest]
+                ) [DQTerm]
+              ) [DsgStmtEqual]
+            ) [DesStmt]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            ExprOne(
+              NormalExpression(
+                TermFact(
+                  Var(
+                    DesignatorI(
+                     t
+                    ) [DesignatorI]
+                  ) [Var]
+                  NoMulopFactorCh(
+                  ) [NoMulopFactorCh]
+                ) [TermFact]
+                NoAddopCh(
+                ) [NoAddopCh]
+              ) [NormalExpression]
+            ) [ExprOne]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclO]
+) [Program]
+INFO  06:27:49,059 - 
+
+================SEMANTICKA OBRADA====================
+
+INFO  06:27:49,069 - Deklarisana konstanta c1 na liniji 5
+INFO  06:27:49,069 - Deklarisana konstanta c2 na liniji 6
+INFO  06:27:49,069 - Deklarisana konstanta c3 na liniji 6
+INFO  06:27:49,069 - Deklarisana globalna promenljiva m na liniji 7
+INFO  06:27:49,069 - Deklarisana globalna promenljiva t na liniji 7
+INFO  06:27:49,069 - Deklarisana globalna promenljiva k na liniji 7
+INFO  06:27:49,070 - Deklarisan globalni niz niz1 na liniji 8
+INFO  06:27:49,070 - Deklarisan globalni niz niz2 na liniji 9
+INFO  06:27:49,070 - Deklarisana globalna promenljiva b na liniji 10
+INFO  06:27:49,070 - Deklarisan globalni niz niz3 na liniji 11
+INFO  06:27:49,070 - Obrada metode main bez povratne vrednosti na liniji 14
+INFO  06:27:49,070 - Deklarisana lokalna promenljiva b11 na liniji 15
+INFO  06:27:49,070 - Deklarisana lokalna promenljiva m11 na liniji 16
+INFO  06:27:49,070 - Deklarisana lokalna promenljiva c11 na liniji 17
+INFO  06:27:49,070 - Deklarisan lokalni niz niz11 na liniji 18
+INFO  06:27:49,070 - Upotreba (niz1) :  na liniji 21
+INFO  06:27:49,070 - Upotreba  (niz1) :  na liniji 23
+INFO  06:27:49,071 - Upotreba  (niz1) :  na liniji 24
+INFO  06:27:49,071 - Upotreba  (niz1) :  na liniji 25
+INFO  06:27:49,071 - Upotreba  (niz1) :  na liniji 26
+INFO  06:27:49,071 - Upotreba  (niz1) :  na liniji 27
+INFO  06:27:49,071 - Upotreba  (niz1) :  na liniji 30
+INFO  06:27:49,071 - Upotreba  (niz1) :  na liniji 31
+INFO  06:27:49,071 - Upotreba  (niz1) :  na liniji 32
+INFO  06:27:49,071 - Upotreba (m) :  na liniji 34
+INFO  06:27:49,071 - Upotreba (k) :  na liniji 35
+INFO  06:27:49,071 - Upotreba (m) :  na liniji 36
+INFO  06:27:49,071 - Upotreba (m) :  na liniji 37
+INFO  06:27:49,071 - Upotreba (t) :  na liniji 39
+INFO  06:27:49,071 - Upotreba (m) :  na liniji 39
+INFO  06:27:49,071 - Upotreba (t) :  na liniji 41
+INFO  06:27:49,072 - Zavrsetak obrade metode main na liniji 14
+INFO  06:27:49,072 - Sintaksna i semanticka analiza uspesno zavrsena!
+INFO  06:27:49,080 - Parsiranje uspesno zavrseno!
+INFO  06:28:50,581 - Kompajliranje ulaznog fajla test\program.mj
+INFO  06:28:50,647 - #2 program
+INFO  06:28:50,647 - #51 semantika
+INFO  06:28:50,647 - #23 const
+INFO  06:28:50,648 - #51 int
+INFO  06:28:50,648 - #51 c1
+INFO  06:28:50,649 - #8 =
+INFO  06:28:50,649 - #48 1
+INFO  06:28:50,649 - #5 ;
+INFO  06:28:50,651 - #23 const
+INFO  06:28:50,652 - #51 char
+INFO  06:28:50,652 - #51 c2
+INFO  06:28:50,652 - #8 =
+INFO  06:28:50,652 - #49 b
+INFO  06:28:50,652 - #15 ,
+INFO  06:28:50,652 - #51 c3
+INFO  06:28:50,653 - #8 =
+INFO  06:28:50,653 - #49 c
+INFO  06:28:50,653 - #5 ;
+INFO  06:28:50,653 - #51 int
+INFO  06:28:50,653 - #51 m
+INFO  06:28:50,653 - #15 ,
+INFO  06:28:50,654 - #51 t
+INFO  06:28:50,654 - #15 ,
+INFO  06:28:50,654 - #51 k
+INFO  06:28:50,654 - #5 ;
+INFO  06:28:50,654 - #51 int
+INFO  06:28:50,655 - #51 niz1
+INFO  06:28:50,655 - #21 [
+INFO  06:28:50,655 - #22 ]
+INFO  06:28:50,655 - #5 ;
+INFO  06:28:50,655 - #51 char
+INFO  06:28:50,655 - #51 niz2
+INFO  06:28:50,656 - #21 [
+INFO  06:28:50,656 - #22 ]
+INFO  06:28:50,656 - #5 ;
+INFO  06:28:50,656 - #51 bool
+INFO  06:28:50,656 - #51 b
+INFO  06:28:50,656 - #5 ;
+INFO  06:28:50,656 - #51 bool
+INFO  06:28:50,656 - #51 niz3
+INFO  06:28:50,656 - #21 [
+INFO  06:28:50,656 - #22 ]
+INFO  06:28:50,656 - #5 ;
+INFO  06:28:50,656 - #3 {
+INFO  06:28:50,656 - #18 void
+INFO  06:28:50,656 - #51 main
+INFO  06:28:50,656 - #6 (
+INFO  06:28:50,657 - #7 )
+INFO  06:28:50,658 - #51 bool
+INFO  06:28:50,659 - #51 b11
+INFO  06:28:50,659 - #5 ;
+INFO  06:28:50,659 - #51 int
+INFO  06:28:50,659 - #51 m11
+INFO  06:28:50,659 - #5 ;
+INFO  06:28:50,659 - #51 char
+INFO  06:28:50,659 - #51 c11
+INFO  06:28:50,659 - #5 ;
+INFO  06:28:50,660 - #51 int
+INFO  06:28:50,660 - #51 niz11
+INFO  06:28:50,660 - #21 [
+INFO  06:28:50,660 - #22 ]
+INFO  06:28:50,660 - #5 ;
+INFO  06:28:50,660 - #3 {
+INFO  06:28:50,660 - #51 niz1
+INFO  06:28:50,661 - #8 =
+INFO  06:28:50,661 - #35 new
+INFO  06:28:50,662 - #51 int
+INFO  06:28:50,662 - #21 [
+INFO  06:28:50,662 - #48 6
+INFO  06:28:50,662 - #22 ]
+INFO  06:28:50,664 - #5 ;
+INFO  06:28:50,664 - #51 niz1
+INFO  06:28:50,664 - #21 [
+INFO  06:28:50,664 - #48 0
+INFO  06:28:50,664 - #22 ]
+INFO  06:28:50,664 - #8 =
+INFO  06:28:50,664 - #11 -
+INFO  06:28:50,664 - #48 3
+INFO  06:28:50,665 - #5 ;
+INFO  06:28:50,665 - #51 niz1
+INFO  06:28:50,665 - #21 [
+INFO  06:28:50,665 - #48 1
+INFO  06:28:50,665 - #22 ]
+INFO  06:28:50,665 - #8 =
+INFO  06:28:50,665 - #48 5
+INFO  06:28:50,665 - #5 ;
+INFO  06:28:50,665 - #51 niz1
+INFO  06:28:50,665 - #21 [
+INFO  06:28:50,665 - #48 1
+INFO  06:28:50,665 - #22 ]
+INFO  06:28:50,666 - #28 ++
+INFO  06:28:50,666 - #5 ;
+INFO  06:28:50,666 - #51 niz1
+INFO  06:28:50,666 - #21 [
+INFO  06:28:50,666 - #48 2
+INFO  06:28:50,666 - #22 ]
+INFO  06:28:50,666 - #8 =
+INFO  06:28:50,666 - #48 2
+INFO  06:28:50,666 - #5 ;
+INFO  06:28:50,667 - #51 niz1
+INFO  06:28:50,667 - #21 [
+INFO  06:28:50,667 - #48 2
+INFO  06:28:50,667 - #22 ]
+INFO  06:28:50,667 - #29 --
+INFO  06:28:50,667 - #5 ;
+INFO  06:28:50,667 - #51 niz1
+INFO  06:28:50,667 - #21 [
+INFO  06:28:50,667 - #48 3
+INFO  06:28:50,667 - #22 ]
+INFO  06:28:50,667 - #8 =
+INFO  06:28:50,668 - #51 niz1
+INFO  06:28:50,668 - #21 [
+INFO  06:28:50,668 - #48 2
+INFO  06:28:50,668 - #22 ]
+INFO  06:28:50,668 - #29 --
+ERROR 06:28:50,668 - 
+Sintaksna greska na liniji 28
+INFO  06:28:50,668 - #5 ;
+INFO  06:28:50,668 - #16 print
+INFO  06:28:50,668 - #6 (
+INFO  06:28:50,669 - #51 niz1
+ERROR 06:28:50,669 - Izvrsen oporavak do ; u liniji 28
+INFO  06:28:50,670 - #21 [
+INFO  06:28:50,670 - #48 1
+INFO  06:28:50,670 - #22 ]
+INFO  06:28:50,670 - #7 )
+INFO  06:28:50,670 - #5 ;
+INFO  06:28:50,670 - #16 print
+INFO  06:28:50,670 - #6 (
+INFO  06:28:50,671 - #51 niz1
+INFO  06:28:50,671 - #21 [
+INFO  06:28:50,671 - #48 2
+INFO  06:28:50,671 - #22 ]
+INFO  06:28:50,671 - #7 )
+INFO  06:28:50,671 - #5 ;
+INFO  06:28:50,671 - #16 print
+INFO  06:28:50,671 - #6 (
+INFO  06:28:50,671 - #51 niz1
+INFO  06:28:50,671 - #21 [
+INFO  06:28:50,671 - #48 3
+INFO  06:28:50,671 - #22 ]
+INFO  06:28:50,671 - #7 )
+INFO  06:28:50,671 - #5 ;
+INFO  06:28:50,671 - #51 m
+INFO  06:28:50,671 - #8 =
+INFO  06:28:50,671 - #48 5
+INFO  06:28:50,671 - #14 %
+INFO  06:28:50,672 - #48 3
+INFO  06:28:50,673 - #5 ;
+INFO  06:28:50,673 - #51 k
+INFO  06:28:50,673 - #8 =
+INFO  06:28:50,673 - #48 3
+INFO  06:28:50,673 - #5 ;
+INFO  06:28:50,673 - #16 print
+INFO  06:28:50,673 - #6 (
+INFO  06:28:50,673 - #51 m
+INFO  06:28:50,673 - #7 )
+INFO  06:28:50,673 - #5 ;
+INFO  06:28:50,673 - #51 m
+INFO  06:28:50,673 - #8 =
+INFO  06:28:50,673 - #48 3
+INFO  06:28:50,673 - #5 ;
+INFO  06:28:50,674 - #51 t
+INFO  06:28:50,674 - #8 =
+INFO  06:28:50,674 - #51 m
+INFO  06:28:50,674 - #44 ??
+INFO  06:28:50,674 - #48 12
+INFO  06:28:50,674 - #5 ;
+INFO  06:28:50,674 - #16 print
+INFO  06:28:50,674 - #6 (
+INFO  06:28:50,674 - #51 t
+INFO  06:28:50,674 - #7 )
+INFO  06:28:50,675 - #5 ;
+INFO  06:28:50,675 - #4 }
+INFO  06:28:50,675 - #4 }
+INFO  06:28:50,677 - =====================SINTAKSNO_STABLO=========================
+INFO  06:28:50,679 - 
+Program(
+  ProgName(
+   semantika
+  ) [ProgName]
+  AllDeclars(
+    AllDeclars(
+      AllDeclars(
+        AllDeclars(
+          AllDeclars(
+            AllDeclars(
+              AllDeclars(
+                NoDeclarations(
+                ) [NoDeclarations]
+                ConstDeclars(
+                  ConstDeclarations(
+                    Type(
+                     int
+                    ) [Type]
+                    ConstDeclar(
+                     c1
+                      ConstDeclarNum(
+                       1
+                      ) [ConstDeclarNum]
+                    ) [ConstDeclar]
+                    NoConstDeclar(
+                    ) [NoConstDeclar]
+                  ) [ConstDeclarations]
+                ) [ConstDeclars]
+              ) [AllDeclars]
+              ConstDeclars(
+                ConstDeclarations(
+                  Type(
+                   char
+                  ) [Type]
+                  ConstDeclar(
+                   c2
+                    ConstDeclarChar(
+                     b
+                    ) [ConstDeclarChar]
+                  ) [ConstDeclar]
+                  ConstDeclarsCh(
+                    NoConstDeclar(
+                    ) [NoConstDeclar]
+                    ConstDeclar(
+                     c3
+                      ConstDeclarChar(
+                       c
+                      ) [ConstDeclarChar]
+                    ) [ConstDeclar]
+                  ) [ConstDeclarsCh]
+                ) [ConstDeclarations]
+              ) [ConstDeclars]
+            ) [AllDeclars]
+            VarDeclars(
+              VarDeclarations(
+                Type(
+                 int
+                ) [Type]
+                VarDeclar(
+                 m
+                ) [VarDeclar]
+                VarDeclarCh(
+                  VarDeclarCh(
+                    NoVarDeclar(
+                    ) [NoVarDeclar]
+                    VarDeclar(
+                     t
+                    ) [VarDeclar]
+                  ) [VarDeclarCh]
+                  VarDeclar(
+                   k
+                  ) [VarDeclar]
+                ) [VarDeclarCh]
+              ) [VarDeclarations]
+            ) [VarDeclars]
+          ) [AllDeclars]
+          VarDeclars(
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              VarDeclarArr(
+               niz1
+              ) [VarDeclarArr]
+              NoVarDeclar(
+              ) [NoVarDeclar]
+            ) [VarDeclarations]
+          ) [VarDeclars]
+        ) [AllDeclars]
+        VarDeclars(
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+            VarDeclarArr(
+             niz2
+            ) [VarDeclarArr]
+            NoVarDeclar(
+            ) [NoVarDeclar]
+          ) [VarDeclarations]
+        ) [VarDeclars]
+      ) [AllDeclars]
+      VarDeclars(
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          VarDeclar(
+           b
+          ) [VarDeclar]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [VarDeclars]
+    ) [AllDeclars]
+    VarDeclars(
+      VarDeclarations(
+        Type(
+         bool
+        ) [Type]
+        VarDeclarArr(
+         niz3
+        ) [VarDeclarArr]
+        NoVarDeclar(
+        ) [NoVarDeclar]
+      ) [VarDeclarations]
+    ) [VarDeclars]
+  ) [AllDeclars]
+  MethodDeclO(
+    MethodDecl(
+      MethodV(
+       main
+      ) [MethodV]
+      MethodPars(
+        NoFormParam(
+        ) [NoFormParam]
+        NoOptionArgs(
+        ) [NoOptionArgs]
+      ) [MethodPars]
+      MethodVarDecl(
+        MethodVarDecl(
+          MethodVarDecl(
+            MethodVarDecl(
+              NoMethodVarDecl(
+              ) [NoMethodVarDecl]
+              VarDeclarations(
+                Type(
+                 bool
+                ) [Type]
+                VarDeclar(
+                 b11
+                ) [VarDeclar]
+                NoVarDeclar(
+                ) [NoVarDeclar]
+              ) [VarDeclarations]
+            ) [MethodVarDecl]
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              VarDeclar(
+               m11
+              ) [VarDeclar]
+              NoVarDeclar(
+              ) [NoVarDeclar]
+            ) [VarDeclarations]
+          ) [MethodVarDecl]
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+            VarDeclar(
+             c11
+            ) [VarDeclar]
+            NoVarDeclar(
+            ) [NoVarDeclar]
+          ) [VarDeclarations]
+        ) [MethodVarDecl]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          VarDeclarArr(
+           niz11
+          ) [VarDeclarArr]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [MethodVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      NoStmt(
+                                      ) [NoStmt]
+                                      MatchedStmt(
+                                        DesStmt(
+                                          DsgStmtEqual(
+                                            DesignatorI(
+                                             niz1
+                                            ) [DesignatorI]
+                                            Assign(
+                                            ) [Assign]
+                                            ExprOne(
+                                              NormalExpression(
+                                                TermFact(
+                                                  NewTypeArr(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    ExprOne(
+                                                      NormalExpression(
+                                                        TermFact(
+                                                          ConstNum(
+                                                           6
+                                                          ) [ConstNum]
+                                                          NoMulopFactorCh(
+                                                          ) [NoMulopFactorCh]
+                                                        ) [TermFact]
+                                                        NoAddopCh(
+                                                        ) [NoAddopCh]
+                                                      ) [NormalExpression]
+                                                    ) [ExprOne]
+                                                  ) [NewTypeArr]
+                                                  NoMulopFactorCh(
+                                                  ) [NoMulopFactorCh]
+                                                ) [TermFact]
+                                                NoAddopCh(
+                                                ) [NoAddopCh]
+                                              ) [NormalExpression]
+                                            ) [ExprOne]
+                                          ) [DsgStmtEqual]
+                                        ) [DesStmt]
+                                      ) [MatchedStmt]
+                                    ) [Statements]
+                                    MatchedStmt(
+                                      DesStmt(
+                                        DsgStmtEqual(
+                                          DesignatorEx(
+                                           niz1
+                                            ExprOne(
+                                              NormalExpression(
+                                                TermFact(
+                                                  ConstNum(
+                                                   0
+                                                  ) [ConstNum]
+                                                  NoMulopFactorCh(
+                                                  ) [NoMulopFactorCh]
+                                                ) [TermFact]
+                                                NoAddopCh(
+                                                ) [NoAddopCh]
+                                              ) [NormalExpression]
+                                            ) [ExprOne]
+                                          ) [DesignatorEx]
+                                          Assign(
+                                          ) [Assign]
+                                          ExprOne(
+                                            MinusExpression(
+                                              TermFact(
+                                                ConstNum(
+                                                 3
+                                                ) [ConstNum]
+                                                NoMulopFactorCh(
+                                                ) [NoMulopFactorCh]
+                                              ) [TermFact]
+                                              NoAddopCh(
+                                              ) [NoAddopCh]
+                                            ) [MinusExpression]
+                                          ) [ExprOne]
+                                        ) [DsgStmtEqual]
+                                      ) [DesStmt]
+                                    ) [MatchedStmt]
+                                  ) [Statements]
+                                  MatchedStmt(
+                                    DesStmt(
+                                      DsgStmtEqual(
+                                        DesignatorEx(
+                                         niz1
+                                          ExprOne(
+                                            NormalExpression(
+                                              TermFact(
+                                                ConstNum(
+                                                 1
+                                                ) [ConstNum]
+                                                NoMulopFactorCh(
+                                                ) [NoMulopFactorCh]
+                                              ) [TermFact]
+                                              NoAddopCh(
+                                              ) [NoAddopCh]
+                                            ) [NormalExpression]
+                                          ) [ExprOne]
+                                        ) [DesignatorEx]
+                                        Assign(
+                                        ) [Assign]
+                                        ExprOne(
+                                          NormalExpression(
+                                            TermFact(
+                                              ConstNum(
+                                               5
+                                              ) [ConstNum]
+                                              NoMulopFactorCh(
+                                              ) [NoMulopFactorCh]
+                                            ) [TermFact]
+                                            NoAddopCh(
+                                            ) [NoAddopCh]
+                                          ) [NormalExpression]
+                                        ) [ExprOne]
+                                      ) [DsgStmtEqual]
+                                    ) [DesStmt]
+                                  ) [MatchedStmt]
+                                ) [Statements]
+                                MatchedStmt(
+                                  DesStmt(
+                                    DsgStmtInc(
+                                      DesignatorEx(
+                                       niz1
+                                        ExprOne(
+                                          NormalExpression(
+                                            TermFact(
+                                              ConstNum(
+                                               1
+                                              ) [ConstNum]
+                                              NoMulopFactorCh(
+                                              ) [NoMulopFactorCh]
+                                            ) [TermFact]
+                                            NoAddopCh(
+                                            ) [NoAddopCh]
+                                          ) [NormalExpression]
+                                        ) [ExprOne]
+                                      ) [DesignatorEx]
+                                    ) [DsgStmtInc]
+                                  ) [DesStmt]
+                                ) [MatchedStmt]
+                              ) [Statements]
+                              MatchedStmt(
+                                DesStmt(
+                                  DsgStmtEqual(
+                                    DesignatorEx(
+                                     niz1
+                                      ExprOne(
+                                        NormalExpression(
+                                          TermFact(
+                                            ConstNum(
+                                             2
+                                            ) [ConstNum]
+                                            NoMulopFactorCh(
+                                            ) [NoMulopFactorCh]
+                                          ) [TermFact]
+                                          NoAddopCh(
+                                          ) [NoAddopCh]
+                                        ) [NormalExpression]
+                                      ) [ExprOne]
+                                    ) [DesignatorEx]
+                                    Assign(
+                                    ) [Assign]
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DsgStmtEqual]
+                                ) [DesStmt]
+                              ) [MatchedStmt]
+                            ) [Statements]
+                            MatchedStmt(
+                              DesStmt(
+                                DsgStmtDec(
+                                  DesignatorEx(
+                                   niz1
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DesignatorEx]
+                                ) [DsgStmtDec]
+                              ) [DesStmt]
+                            ) [MatchedStmt]
+                          ) [Statements]
+                          MatchedStmt(
+                            MatchedDerived1(
+                            ) [MatchedDerived1]
+                          ) [MatchedStmt]
+                        ) [Statements]
+                        MatchedStmt(
+                          PrintStmt(
+                            ExprOne(
+                              NormalExpression(
+                                TermFact(
+                                  Var(
+                                    DesignatorEx(
+                                     niz1
+                                      ExprOne(
+                                        NormalExpression(
+                                          TermFact(
+                                            ConstNum(
+                                             1
+                                            ) [ConstNum]
+                                            NoMulopFactorCh(
+                                            ) [NoMulopFactorCh]
+                                          ) [TermFact]
+                                          NoAddopCh(
+                                          ) [NoAddopCh]
+                                        ) [NormalExpression]
+                                      ) [ExprOne]
+                                    ) [DesignatorEx]
+                                  ) [Var]
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                ) [TermFact]
+                                NoAddopCh(
+                                ) [NoAddopCh]
+                              ) [NormalExpression]
+                            ) [ExprOne]
+                          ) [PrintStmt]
+                        ) [MatchedStmt]
+                      ) [Statements]
+                      MatchedStmt(
+                        PrintStmt(
+                          ExprOne(
+                            NormalExpression(
+                              TermFact(
+                                Var(
+                                  DesignatorEx(
+                                   niz1
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DesignatorEx]
+                                ) [Var]
+                                NoMulopFactorCh(
+                                ) [NoMulopFactorCh]
+                              ) [TermFact]
+                              NoAddopCh(
+                              ) [NoAddopCh]
+                            ) [NormalExpression]
+                          ) [ExprOne]
+                        ) [PrintStmt]
+                      ) [MatchedStmt]
+                    ) [Statements]
+                    MatchedStmt(
+                      PrintStmt(
+                        ExprOne(
+                          NormalExpression(
+                            TermFact(
+                              Var(
+                                DesignatorEx(
+                                 niz1
+                                  ExprOne(
+                                    NormalExpression(
+                                      TermFact(
+                                        ConstNum(
+                                         3
+                                        ) [ConstNum]
+                                        NoMulopFactorCh(
+                                        ) [NoMulopFactorCh]
+                                      ) [TermFact]
+                                      NoAddopCh(
+                                      ) [NoAddopCh]
+                                    ) [NormalExpression]
+                                  ) [ExprOne]
+                                ) [DesignatorEx]
+                              ) [Var]
+                              NoMulopFactorCh(
+                              ) [NoMulopFactorCh]
+                            ) [TermFact]
+                            NoAddopCh(
+                            ) [NoAddopCh]
+                          ) [NormalExpression]
+                        ) [ExprOne]
+                      ) [PrintStmt]
+                    ) [MatchedStmt]
+                  ) [Statements]
+                  MatchedStmt(
+                    DesStmt(
+                      DsgStmtEqual(
+                        DesignatorI(
+                         m
+                        ) [DesignatorI]
+                        Assign(
+                        ) [Assign]
+                        ExprOne(
+                          NormalExpression(
+                            TermFact(
+                              ConstNum(
+                               5
+                              ) [ConstNum]
+                              MulopFactorCho(
+                                NoMulopFactorCh(
+                                ) [NoMulopFactorCh]
+                                Mod(
+                                ) [Mod]
+                                ConstNum(
+                                 3
+                                ) [ConstNum]
+                              ) [MulopFactorCho]
+                            ) [TermFact]
+                            NoAddopCh(
+                            ) [NoAddopCh]
+                          ) [NormalExpression]
+                        ) [ExprOne]
+                      ) [DsgStmtEqual]
+                    ) [DesStmt]
+                  ) [MatchedStmt]
+                ) [Statements]
+                MatchedStmt(
+                  DesStmt(
+                    DsgStmtEqual(
+                      DesignatorI(
+                       k
+                      ) [DesignatorI]
+                      Assign(
+                      ) [Assign]
+                      ExprOne(
+                        NormalExpression(
+                          TermFact(
+                            ConstNum(
+                             3
+                            ) [ConstNum]
+                            NoMulopFactorCh(
+                            ) [NoMulopFactorCh]
+                          ) [TermFact]
+                          NoAddopCh(
+                          ) [NoAddopCh]
+                        ) [NormalExpression]
+                      ) [ExprOne]
+                    ) [DsgStmtEqual]
+                  ) [DesStmt]
+                ) [MatchedStmt]
+              ) [Statements]
+              MatchedStmt(
+                PrintStmt(
+                  ExprOne(
+                    NormalExpression(
+                      TermFact(
+                        Var(
+                          DesignatorI(
+                           m
+                          ) [DesignatorI]
+                        ) [Var]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [ExprOne]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              DesStmt(
+                DsgStmtEqual(
+                  DesignatorI(
+                   m
+                  ) [DesignatorI]
+                  Assign(
+                  ) [Assign]
+                  ExprOne(
+                    NormalExpression(
+                      TermFact(
+                        ConstNum(
+                         3
+                        ) [ConstNum]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [ExprOne]
+                ) [DsgStmtEqual]
+              ) [DesStmt]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            DesStmt(
+              DsgStmtEqual(
+                DesignatorI(
+                 t
+                ) [DesignatorI]
+                Assign(
+                ) [Assign]
+                DQTerm(
+                  LeftQuest(
+                    NormalExpression(
+                      TermFact(
+                        Var(
+                          DesignatorI(
+                           m
+                          ) [DesignatorI]
+                        ) [Var]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [LeftQuest]
+                  RightQuest(
+                    NormalExpression(
+                      TermFact(
+                        ConstNum(
+                         12
+                        ) [ConstNum]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [RightQuest]
+                ) [DQTerm]
+              ) [DsgStmtEqual]
+            ) [DesStmt]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            ExprOne(
+              NormalExpression(
+                TermFact(
+                  Var(
+                    DesignatorI(
+                     t
+                    ) [DesignatorI]
+                  ) [Var]
+                  NoMulopFactorCh(
+                  ) [NoMulopFactorCh]
+                ) [TermFact]
+                NoAddopCh(
+                ) [NoAddopCh]
+              ) [NormalExpression]
+            ) [ExprOne]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclO]
+) [Program]
+INFO  06:28:50,680 - 
+
+================SEMANTICKA OBRADA====================
+
+INFO  06:28:50,689 - Deklarisana konstanta c1 na liniji 5
+INFO  06:28:50,689 - Deklarisana konstanta c2 na liniji 6
+INFO  06:28:50,689 - Deklarisana konstanta c3 na liniji 6
+INFO  06:28:50,690 - Deklarisana globalna promenljiva m na liniji 7
+INFO  06:28:50,690 - Deklarisana globalna promenljiva t na liniji 7
+INFO  06:28:50,690 - Deklarisana globalna promenljiva k na liniji 7
+INFO  06:28:50,690 - Deklarisan globalni niz niz1 na liniji 8
+INFO  06:28:50,691 - Deklarisan globalni niz niz2 na liniji 9
+INFO  06:28:50,691 - Deklarisana globalna promenljiva b na liniji 10
+INFO  06:28:50,691 - Deklarisan globalni niz niz3 na liniji 11
+INFO  06:28:50,691 - Obrada metode main bez povratne vrednosti na liniji 14
+INFO  06:28:50,691 - Deklarisana lokalna promenljiva b11 na liniji 15
+INFO  06:28:50,691 - Deklarisana lokalna promenljiva m11 na liniji 16
+INFO  06:28:50,691 - Deklarisana lokalna promenljiva c11 na liniji 17
+INFO  06:28:50,691 - Deklarisan lokalni niz niz11 na liniji 18
+INFO  06:28:50,691 - Upotreba (niz1) :  na liniji 21
+INFO  06:28:50,691 - Upotreba  (niz1) :  na liniji 23
+INFO  06:28:50,691 - Upotreba  (niz1) :  na liniji 24
+INFO  06:28:50,691 - Upotreba  (niz1) :  na liniji 25
+INFO  06:28:50,692 - Upotreba  (niz1) :  na liniji 26
+INFO  06:28:50,692 - Upotreba  (niz1) :  na liniji 27
+INFO  06:28:50,692 - Upotreba  (niz1) :  na liniji 30
+INFO  06:28:50,692 - Upotreba  (niz1) :  na liniji 31
+INFO  06:28:50,692 - Upotreba  (niz1) :  na liniji 32
+INFO  06:28:50,692 - Upotreba (m) :  na liniji 34
+INFO  06:28:50,692 - Upotreba (k) :  na liniji 35
+INFO  06:28:50,692 - Upotreba (m) :  na liniji 36
+INFO  06:28:50,692 - Upotreba (m) :  na liniji 37
+INFO  06:28:50,692 - Upotreba (t) :  na liniji 39
+INFO  06:28:50,692 - Upotreba (m) :  na liniji 39
+INFO  06:28:50,692 - Upotreba (t) :  na liniji 41
+INFO  06:28:50,692 - Zavrsetak obrade metode main na liniji 14
+INFO  06:28:50,693 - Sintaksna i semanticka analiza uspesno zavrsena!
+INFO  06:28:50,698 - Parsiranje uspesno zavrseno!
+INFO  06:30:47,201 - Kompajliranje ulaznog fajla test\program.mj
+INFO  06:30:47,267 - #2 program
+INFO  06:30:47,267 - #51 semantika
+INFO  06:30:47,268 - #23 const
+INFO  06:30:47,269 - #51 int
+INFO  06:30:47,269 - #51 c1
+INFO  06:30:47,270 - #8 =
+INFO  06:30:47,270 - #48 1
+INFO  06:30:47,270 - #5 ;
+INFO  06:30:47,271 - #23 const
+INFO  06:30:47,272 - #51 char
+INFO  06:30:47,273 - #51 c2
+INFO  06:30:47,273 - #8 =
+INFO  06:30:47,273 - #49 b
+INFO  06:30:47,273 - #15 ,
+INFO  06:30:47,273 - #51 c3
+INFO  06:30:47,273 - #8 =
+INFO  06:30:47,273 - #49 c
+INFO  06:30:47,273 - #5 ;
+INFO  06:30:47,273 - #51 int
+INFO  06:30:47,274 - #51 m
+INFO  06:30:47,274 - #15 ,
+INFO  06:30:47,274 - #51 t
+INFO  06:30:47,275 - #15 ,
+INFO  06:30:47,275 - #51 k
+INFO  06:30:47,275 - #5 ;
+INFO  06:30:47,275 - #51 int
+INFO  06:30:47,276 - #51 niz1
+INFO  06:30:47,276 - #21 [
+INFO  06:30:47,276 - #22 ]
+INFO  06:30:47,276 - #5 ;
+INFO  06:30:47,276 - #51 char
+INFO  06:30:47,276 - #51 niz2
+INFO  06:30:47,276 - #21 [
+INFO  06:30:47,276 - #22 ]
+INFO  06:30:47,276 - #5 ;
+INFO  06:30:47,276 - #51 bool
+INFO  06:30:47,277 - #51 b
+INFO  06:30:47,277 - #5 ;
+INFO  06:30:47,277 - #51 bool
+INFO  06:30:47,277 - #51 niz3
+INFO  06:30:47,277 - #21 [
+INFO  06:30:47,277 - #22 ]
+INFO  06:30:47,277 - #5 ;
+INFO  06:30:47,277 - #3 {
+INFO  06:30:47,277 - #18 void
+INFO  06:30:47,277 - #51 main
+INFO  06:30:47,278 - #6 (
+INFO  06:30:47,278 - #7 )
+INFO  06:30:47,280 - #51 bool
+INFO  06:30:47,281 - #51 b11
+INFO  06:30:47,281 - #5 ;
+INFO  06:30:47,281 - #51 int
+INFO  06:30:47,281 - #51 m11
+INFO  06:30:47,281 - #5 ;
+INFO  06:30:47,281 - #51 char
+INFO  06:30:47,281 - #51 c11
+INFO  06:30:47,281 - #5 ;
+INFO  06:30:47,281 - #51 int
+INFO  06:30:47,281 - #51 niz11
+INFO  06:30:47,281 - #21 [
+INFO  06:30:47,282 - #22 ]
+INFO  06:30:47,282 - #5 ;
+INFO  06:30:47,282 - #3 {
+INFO  06:30:47,282 - #51 niz1
+INFO  06:30:47,282 - #8 =
+INFO  06:30:47,283 - #35 new
+INFO  06:30:47,283 - #51 int
+INFO  06:30:47,284 - #21 [
+INFO  06:30:47,284 - #48 6
+INFO  06:30:47,284 - #22 ]
+INFO  06:30:47,285 - #5 ;
+INFO  06:30:47,286 - #51 niz1
+INFO  06:30:47,286 - #21 [
+INFO  06:30:47,286 - #48 0
+INFO  06:30:47,286 - #22 ]
+INFO  06:30:47,286 - #8 =
+INFO  06:30:47,286 - #11 -
+INFO  06:30:47,286 - #48 3
+INFO  06:30:47,286 - #5 ;
+INFO  06:30:47,286 - #51 niz1
+INFO  06:30:47,286 - #21 [
+INFO  06:30:47,287 - #48 1
+INFO  06:30:47,287 - #22 ]
+INFO  06:30:47,287 - #8 =
+INFO  06:30:47,287 - #48 5
+INFO  06:30:47,287 - #5 ;
+INFO  06:30:47,287 - #51 niz1
+INFO  06:30:47,287 - #21 [
+INFO  06:30:47,287 - #48 1
+INFO  06:30:47,287 - #22 ]
+INFO  06:30:47,287 - #28 ++
+INFO  06:30:47,287 - #5 ;
+INFO  06:30:47,287 - #51 niz1
+INFO  06:30:47,287 - #21 [
+INFO  06:30:47,287 - #48 2
+INFO  06:30:47,288 - #22 ]
+INFO  06:30:47,288 - #8 =
+INFO  06:30:47,288 - #48 2
+INFO  06:30:47,288 - #5 ;
+INFO  06:30:47,288 - #51 niz1
+INFO  06:30:47,288 - #21 [
+INFO  06:30:47,288 - #48 2
+INFO  06:30:47,288 - #22 ]
+INFO  06:30:47,288 - #29 --
+INFO  06:30:47,288 - #5 ;
+INFO  06:30:47,288 - #51 niz1
+INFO  06:30:47,288 - #21 [
+INFO  06:30:47,289 - #48 3
+INFO  06:30:47,289 - #22 ]
+INFO  06:30:47,289 - #8 =
+INFO  06:30:47,289 - #51 niz1
+INFO  06:30:47,289 - #21 [
+INFO  06:30:47,289 - #48 2
+INFO  06:30:47,289 - #22 ]
+INFO  06:30:47,289 - #29 --
+ERROR 06:30:47,289 - 
+Sintaksna greska na liniji 28
+INFO  06:30:47,291 - #5 ;
+INFO  06:30:47,291 - #16 print
+INFO  06:30:47,291 - #6 (
+INFO  06:30:47,292 - #51 niz1
+ERROR 06:30:47,292 - Izvrsen oporavak do ; u liniji 28
+INFO  06:30:47,293 - #21 [
+INFO  06:30:47,293 - #48 1
+INFO  06:30:47,293 - #22 ]
+INFO  06:30:47,293 - #7 )
+INFO  06:30:47,293 - #5 ;
+INFO  06:30:47,293 - #16 print
+INFO  06:30:47,294 - #6 (
+INFO  06:30:47,294 - #51 niz1
+INFO  06:30:47,294 - #21 [
+INFO  06:30:47,294 - #48 2
+INFO  06:30:47,294 - #22 ]
+INFO  06:30:47,294 - #7 )
+INFO  06:30:47,294 - #5 ;
+INFO  06:30:47,294 - #16 print
+INFO  06:30:47,294 - #6 (
+INFO  06:30:47,294 - #51 niz1
+INFO  06:30:47,294 - #21 [
+INFO  06:30:47,294 - #48 3
+INFO  06:30:47,294 - #22 ]
+INFO  06:30:47,294 - #7 )
+INFO  06:30:47,294 - #5 ;
+INFO  06:30:47,294 - #51 m
+INFO  06:30:47,294 - #8 =
+INFO  06:30:47,295 - #48 5
+INFO  06:30:47,295 - #14 %
+INFO  06:30:47,295 - #48 3
+INFO  06:30:47,296 - #5 ;
+INFO  06:30:47,296 - #51 k
+INFO  06:30:47,296 - #8 =
+INFO  06:30:47,296 - #48 3
+INFO  06:30:47,296 - #5 ;
+INFO  06:30:47,296 - #16 print
+INFO  06:30:47,296 - #6 (
+INFO  06:30:47,296 - #51 m
+INFO  06:30:47,296 - #7 )
+INFO  06:30:47,296 - #5 ;
+INFO  06:30:47,296 - #51 m
+INFO  06:30:47,296 - #8 =
+INFO  06:30:47,296 - #48 3
+INFO  06:30:47,296 - #5 ;
+INFO  06:30:47,296 - #51 t
+INFO  06:30:47,297 - #8 =
+INFO  06:30:47,297 - #51 m
+INFO  06:30:47,297 - #44 ??
+INFO  06:30:47,297 - #48 12
+INFO  06:30:47,297 - #5 ;
+INFO  06:30:47,297 - #16 print
+INFO  06:30:47,297 - #6 (
+INFO  06:30:47,297 - #51 t
+INFO  06:30:47,297 - #7 )
+INFO  06:30:47,297 - #5 ;
+INFO  06:30:47,297 - #4 }
+INFO  06:30:47,297 - #4 }
+INFO  06:30:47,299 - =====================SINTAKSNO_STABLO=========================
+INFO  06:30:47,301 - 
+Program(
+  ProgName(
+   semantika
+  ) [ProgName]
+  AllDeclars(
+    AllDeclars(
+      AllDeclars(
+        AllDeclars(
+          AllDeclars(
+            AllDeclars(
+              AllDeclars(
+                NoDeclarations(
+                ) [NoDeclarations]
+                ConstDeclars(
+                  ConstDeclarations(
+                    Type(
+                     int
+                    ) [Type]
+                    ConstDeclar(
+                     c1
+                      ConstDeclarNum(
+                       1
+                      ) [ConstDeclarNum]
+                    ) [ConstDeclar]
+                    NoConstDeclar(
+                    ) [NoConstDeclar]
+                  ) [ConstDeclarations]
+                ) [ConstDeclars]
+              ) [AllDeclars]
+              ConstDeclars(
+                ConstDeclarations(
+                  Type(
+                   char
+                  ) [Type]
+                  ConstDeclar(
+                   c2
+                    ConstDeclarChar(
+                     b
+                    ) [ConstDeclarChar]
+                  ) [ConstDeclar]
+                  ConstDeclarsCh(
+                    NoConstDeclar(
+                    ) [NoConstDeclar]
+                    ConstDeclar(
+                     c3
+                      ConstDeclarChar(
+                       c
+                      ) [ConstDeclarChar]
+                    ) [ConstDeclar]
+                  ) [ConstDeclarsCh]
+                ) [ConstDeclarations]
+              ) [ConstDeclars]
+            ) [AllDeclars]
+            VarDeclars(
+              VarDeclarations(
+                Type(
+                 int
+                ) [Type]
+                VarDeclar(
+                 m
+                ) [VarDeclar]
+                VarDeclarCh(
+                  VarDeclarCh(
+                    NoVarDeclar(
+                    ) [NoVarDeclar]
+                    VarDeclar(
+                     t
+                    ) [VarDeclar]
+                  ) [VarDeclarCh]
+                  VarDeclar(
+                   k
+                  ) [VarDeclar]
+                ) [VarDeclarCh]
+              ) [VarDeclarations]
+            ) [VarDeclars]
+          ) [AllDeclars]
+          VarDeclars(
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              VarDeclarArr(
+               niz1
+              ) [VarDeclarArr]
+              NoVarDeclar(
+              ) [NoVarDeclar]
+            ) [VarDeclarations]
+          ) [VarDeclars]
+        ) [AllDeclars]
+        VarDeclars(
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+            VarDeclarArr(
+             niz2
+            ) [VarDeclarArr]
+            NoVarDeclar(
+            ) [NoVarDeclar]
+          ) [VarDeclarations]
+        ) [VarDeclars]
+      ) [AllDeclars]
+      VarDeclars(
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          VarDeclar(
+           b
+          ) [VarDeclar]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [VarDeclars]
+    ) [AllDeclars]
+    VarDeclars(
+      VarDeclarations(
+        Type(
+         bool
+        ) [Type]
+        VarDeclarArr(
+         niz3
+        ) [VarDeclarArr]
+        NoVarDeclar(
+        ) [NoVarDeclar]
+      ) [VarDeclarations]
+    ) [VarDeclars]
+  ) [AllDeclars]
+  MethodDeclO(
+    MethodDecl(
+      MethodV(
+       main
+      ) [MethodV]
+      MethodPars(
+        NoFormParam(
+        ) [NoFormParam]
+        NoOptionArgs(
+        ) [NoOptionArgs]
+      ) [MethodPars]
+      MethodVarDecl(
+        MethodVarDecl(
+          MethodVarDecl(
+            MethodVarDecl(
+              NoMethodVarDecl(
+              ) [NoMethodVarDecl]
+              VarDeclarations(
+                Type(
+                 bool
+                ) [Type]
+                VarDeclar(
+                 b11
+                ) [VarDeclar]
+                NoVarDeclar(
+                ) [NoVarDeclar]
+              ) [VarDeclarations]
+            ) [MethodVarDecl]
+            VarDeclarations(
+              Type(
+               int
+              ) [Type]
+              VarDeclar(
+               m11
+              ) [VarDeclar]
+              NoVarDeclar(
+              ) [NoVarDeclar]
+            ) [VarDeclarations]
+          ) [MethodVarDecl]
+          VarDeclarations(
+            Type(
+             char
+            ) [Type]
+            VarDeclar(
+             c11
+            ) [VarDeclar]
+            NoVarDeclar(
+            ) [NoVarDeclar]
+          ) [VarDeclarations]
+        ) [MethodVarDecl]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          VarDeclarArr(
+           niz11
+          ) [VarDeclarArr]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [MethodVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      NoStmt(
+                                      ) [NoStmt]
+                                      MatchedStmt(
+                                        DesStmt(
+                                          DsgStmtEqual(
+                                            DesignatorI(
+                                             niz1
+                                            ) [DesignatorI]
+                                            Assign(
+                                            ) [Assign]
+                                            ExprOne(
+                                              NormalExpression(
+                                                TermFact(
+                                                  NewTypeArr(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    ExprOne(
+                                                      NormalExpression(
+                                                        TermFact(
+                                                          ConstNum(
+                                                           6
+                                                          ) [ConstNum]
+                                                          NoMulopFactorCh(
+                                                          ) [NoMulopFactorCh]
+                                                        ) [TermFact]
+                                                        NoAddopCh(
+                                                        ) [NoAddopCh]
+                                                      ) [NormalExpression]
+                                                    ) [ExprOne]
+                                                  ) [NewTypeArr]
+                                                  NoMulopFactorCh(
+                                                  ) [NoMulopFactorCh]
+                                                ) [TermFact]
+                                                NoAddopCh(
+                                                ) [NoAddopCh]
+                                              ) [NormalExpression]
+                                            ) [ExprOne]
+                                          ) [DsgStmtEqual]
+                                        ) [DesStmt]
+                                      ) [MatchedStmt]
+                                    ) [Statements]
+                                    MatchedStmt(
+                                      DesStmt(
+                                        DsgStmtEqual(
+                                          DesignatorEx(
+                                           niz1
+                                            ExprOne(
+                                              NormalExpression(
+                                                TermFact(
+                                                  ConstNum(
+                                                   0
+                                                  ) [ConstNum]
+                                                  NoMulopFactorCh(
+                                                  ) [NoMulopFactorCh]
+                                                ) [TermFact]
+                                                NoAddopCh(
+                                                ) [NoAddopCh]
+                                              ) [NormalExpression]
+                                            ) [ExprOne]
+                                          ) [DesignatorEx]
+                                          Assign(
+                                          ) [Assign]
+                                          ExprOne(
+                                            MinusExpression(
+                                              TermFact(
+                                                ConstNum(
+                                                 3
+                                                ) [ConstNum]
+                                                NoMulopFactorCh(
+                                                ) [NoMulopFactorCh]
+                                              ) [TermFact]
+                                              NoAddopCh(
+                                              ) [NoAddopCh]
+                                            ) [MinusExpression]
+                                          ) [ExprOne]
+                                        ) [DsgStmtEqual]
+                                      ) [DesStmt]
+                                    ) [MatchedStmt]
+                                  ) [Statements]
+                                  MatchedStmt(
+                                    DesStmt(
+                                      DsgStmtEqual(
+                                        DesignatorEx(
+                                         niz1
+                                          ExprOne(
+                                            NormalExpression(
+                                              TermFact(
+                                                ConstNum(
+                                                 1
+                                                ) [ConstNum]
+                                                NoMulopFactorCh(
+                                                ) [NoMulopFactorCh]
+                                              ) [TermFact]
+                                              NoAddopCh(
+                                              ) [NoAddopCh]
+                                            ) [NormalExpression]
+                                          ) [ExprOne]
+                                        ) [DesignatorEx]
+                                        Assign(
+                                        ) [Assign]
+                                        ExprOne(
+                                          NormalExpression(
+                                            TermFact(
+                                              ConstNum(
+                                               5
+                                              ) [ConstNum]
+                                              NoMulopFactorCh(
+                                              ) [NoMulopFactorCh]
+                                            ) [TermFact]
+                                            NoAddopCh(
+                                            ) [NoAddopCh]
+                                          ) [NormalExpression]
+                                        ) [ExprOne]
+                                      ) [DsgStmtEqual]
+                                    ) [DesStmt]
+                                  ) [MatchedStmt]
+                                ) [Statements]
+                                MatchedStmt(
+                                  DesStmt(
+                                    DsgStmtInc(
+                                      DesignatorEx(
+                                       niz1
+                                        ExprOne(
+                                          NormalExpression(
+                                            TermFact(
+                                              ConstNum(
+                                               1
+                                              ) [ConstNum]
+                                              NoMulopFactorCh(
+                                              ) [NoMulopFactorCh]
+                                            ) [TermFact]
+                                            NoAddopCh(
+                                            ) [NoAddopCh]
+                                          ) [NormalExpression]
+                                        ) [ExprOne]
+                                      ) [DesignatorEx]
+                                    ) [DsgStmtInc]
+                                  ) [DesStmt]
+                                ) [MatchedStmt]
+                              ) [Statements]
+                              MatchedStmt(
+                                DesStmt(
+                                  DsgStmtEqual(
+                                    DesignatorEx(
+                                     niz1
+                                      ExprOne(
+                                        NormalExpression(
+                                          TermFact(
+                                            ConstNum(
+                                             2
+                                            ) [ConstNum]
+                                            NoMulopFactorCh(
+                                            ) [NoMulopFactorCh]
+                                          ) [TermFact]
+                                          NoAddopCh(
+                                          ) [NoAddopCh]
+                                        ) [NormalExpression]
+                                      ) [ExprOne]
+                                    ) [DesignatorEx]
+                                    Assign(
+                                    ) [Assign]
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DsgStmtEqual]
+                                ) [DesStmt]
+                              ) [MatchedStmt]
+                            ) [Statements]
+                            MatchedStmt(
+                              DesStmt(
+                                DsgStmtDec(
+                                  DesignatorEx(
+                                   niz1
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DesignatorEx]
+                                ) [DsgStmtDec]
+                              ) [DesStmt]
+                            ) [MatchedStmt]
+                          ) [Statements]
+                          MatchedStmt(
+                            MatchedDerived1(
+                            ) [MatchedDerived1]
+                          ) [MatchedStmt]
+                        ) [Statements]
+                        MatchedStmt(
+                          PrintStmt(
+                            ExprOne(
+                              NormalExpression(
+                                TermFact(
+                                  Var(
+                                    DesignatorEx(
+                                     niz1
+                                      ExprOne(
+                                        NormalExpression(
+                                          TermFact(
+                                            ConstNum(
+                                             1
+                                            ) [ConstNum]
+                                            NoMulopFactorCh(
+                                            ) [NoMulopFactorCh]
+                                          ) [TermFact]
+                                          NoAddopCh(
+                                          ) [NoAddopCh]
+                                        ) [NormalExpression]
+                                      ) [ExprOne]
+                                    ) [DesignatorEx]
+                                  ) [Var]
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                ) [TermFact]
+                                NoAddopCh(
+                                ) [NoAddopCh]
+                              ) [NormalExpression]
+                            ) [ExprOne]
+                          ) [PrintStmt]
+                        ) [MatchedStmt]
+                      ) [Statements]
+                      MatchedStmt(
+                        PrintStmt(
+                          ExprOne(
+                            NormalExpression(
+                              TermFact(
+                                Var(
+                                  DesignatorEx(
+                                   niz1
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DesignatorEx]
+                                ) [Var]
+                                NoMulopFactorCh(
+                                ) [NoMulopFactorCh]
+                              ) [TermFact]
+                              NoAddopCh(
+                              ) [NoAddopCh]
+                            ) [NormalExpression]
+                          ) [ExprOne]
+                        ) [PrintStmt]
+                      ) [MatchedStmt]
+                    ) [Statements]
+                    MatchedStmt(
+                      PrintStmt(
+                        ExprOne(
+                          NormalExpression(
+                            TermFact(
+                              Var(
+                                DesignatorEx(
+                                 niz1
+                                  ExprOne(
+                                    NormalExpression(
+                                      TermFact(
+                                        ConstNum(
+                                         3
+                                        ) [ConstNum]
+                                        NoMulopFactorCh(
+                                        ) [NoMulopFactorCh]
+                                      ) [TermFact]
+                                      NoAddopCh(
+                                      ) [NoAddopCh]
+                                    ) [NormalExpression]
+                                  ) [ExprOne]
+                                ) [DesignatorEx]
+                              ) [Var]
+                              NoMulopFactorCh(
+                              ) [NoMulopFactorCh]
+                            ) [TermFact]
+                            NoAddopCh(
+                            ) [NoAddopCh]
+                          ) [NormalExpression]
+                        ) [ExprOne]
+                      ) [PrintStmt]
+                    ) [MatchedStmt]
+                  ) [Statements]
+                  MatchedStmt(
+                    DesStmt(
+                      DsgStmtEqual(
+                        DesignatorI(
+                         m
+                        ) [DesignatorI]
+                        Assign(
+                        ) [Assign]
+                        ExprOne(
+                          NormalExpression(
+                            TermFact(
+                              ConstNum(
+                               5
+                              ) [ConstNum]
+                              MulopFactorCho(
+                                NoMulopFactorCh(
+                                ) [NoMulopFactorCh]
+                                Mod(
+                                ) [Mod]
+                                ConstNum(
+                                 3
+                                ) [ConstNum]
+                              ) [MulopFactorCho]
+                            ) [TermFact]
+                            NoAddopCh(
+                            ) [NoAddopCh]
+                          ) [NormalExpression]
+                        ) [ExprOne]
+                      ) [DsgStmtEqual]
+                    ) [DesStmt]
+                  ) [MatchedStmt]
+                ) [Statements]
+                MatchedStmt(
+                  DesStmt(
+                    DsgStmtEqual(
+                      DesignatorI(
+                       k
+                      ) [DesignatorI]
+                      Assign(
+                      ) [Assign]
+                      ExprOne(
+                        NormalExpression(
+                          TermFact(
+                            ConstNum(
+                             3
+                            ) [ConstNum]
+                            NoMulopFactorCh(
+                            ) [NoMulopFactorCh]
+                          ) [TermFact]
+                          NoAddopCh(
+                          ) [NoAddopCh]
+                        ) [NormalExpression]
+                      ) [ExprOne]
+                    ) [DsgStmtEqual]
+                  ) [DesStmt]
+                ) [MatchedStmt]
+              ) [Statements]
+              MatchedStmt(
+                PrintStmt(
+                  ExprOne(
+                    NormalExpression(
+                      TermFact(
+                        Var(
+                          DesignatorI(
+                           m
+                          ) [DesignatorI]
+                        ) [Var]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [ExprOne]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              DesStmt(
+                DsgStmtEqual(
+                  DesignatorI(
+                   m
+                  ) [DesignatorI]
+                  Assign(
+                  ) [Assign]
+                  ExprOne(
+                    NormalExpression(
+                      TermFact(
+                        ConstNum(
+                         3
+                        ) [ConstNum]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [ExprOne]
+                ) [DsgStmtEqual]
+              ) [DesStmt]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            DesStmt(
+              DsgStmtEqual(
+                DesignatorI(
+                 t
+                ) [DesignatorI]
+                Assign(
+                ) [Assign]
+                DQTerm(
+                  LeftQuest(
+                    NormalExpression(
+                      TermFact(
+                        Var(
+                          DesignatorI(
+                           m
+                          ) [DesignatorI]
+                        ) [Var]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [LeftQuest]
+                  RightQuest(
+                    NormalExpression(
+                      TermFact(
+                        ConstNum(
+                         12
+                        ) [ConstNum]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [RightQuest]
+                ) [DQTerm]
+              ) [DsgStmtEqual]
+            ) [DesStmt]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            ExprOne(
+              NormalExpression(
+                TermFact(
+                  Var(
+                    DesignatorI(
+                     t
+                    ) [DesignatorI]
+                  ) [Var]
+                  NoMulopFactorCh(
+                  ) [NoMulopFactorCh]
+                ) [TermFact]
+                NoAddopCh(
+                ) [NoAddopCh]
+              ) [NormalExpression]
+            ) [ExprOne]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclO]
+) [Program]
+INFO  06:30:47,303 - 
+
+================SEMANTICKA OBRADA====================
+
+INFO  06:30:47,311 - Deklarisana konstanta c1 na liniji 5
+INFO  06:30:47,311 - Deklarisana konstanta c2 na liniji 6
+INFO  06:30:47,311 - Deklarisana konstanta c3 na liniji 6
+INFO  06:30:47,311 - Deklarisana globalna promenljiva m na liniji 7
+INFO  06:30:47,311 - Deklarisana globalna promenljiva t na liniji 7
+INFO  06:30:47,311 - Deklarisana globalna promenljiva k na liniji 7
+INFO  06:30:47,312 - Deklarisan globalni niz niz1 na liniji 8
+INFO  06:30:47,312 - Deklarisan globalni niz niz2 na liniji 9
+INFO  06:30:47,312 - Deklarisana globalna promenljiva b na liniji 10
+INFO  06:30:47,312 - Deklarisan globalni niz niz3 na liniji 11
+INFO  06:30:47,312 - Obrada metode main bez povratne vrednosti na liniji 14
+INFO  06:30:47,312 - Deklarisana lokalna promenljiva b11 na liniji 15
+INFO  06:30:47,312 - Deklarisana lokalna promenljiva m11 na liniji 16
+INFO  06:30:47,312 - Deklarisana lokalna promenljiva c11 na liniji 17
+INFO  06:30:47,312 - Deklarisan lokalni niz niz11 na liniji 18
+INFO  06:30:47,312 - Upotreba (niz1) :  na liniji 21
+INFO  06:30:47,313 - Upotreba  (niz1) :  na liniji 23
+INFO  06:30:47,313 - Upotreba  (niz1) :  na liniji 24
+INFO  06:30:47,313 - Upotreba  (niz1) :  na liniji 25
+INFO  06:30:47,313 - Upotreba  (niz1) :  na liniji 26
+INFO  06:30:47,313 - Upotreba  (niz1) :  na liniji 27
+INFO  06:30:47,313 - Upotreba  (niz1) :  na liniji 30
+INFO  06:30:47,313 - Upotreba  (niz1) :  na liniji 31
+INFO  06:30:47,313 - Upotreba  (niz1) :  na liniji 32
+INFO  06:30:47,313 - Upotreba (m) :  na liniji 34
+INFO  06:30:47,313 - Upotreba (k) :  na liniji 35
+INFO  06:30:47,313 - Upotreba (m) :  na liniji 36
+INFO  06:30:47,313 - Upotreba (m) :  na liniji 37
+INFO  06:30:47,314 - Upotreba (t) :  na liniji 39
+INFO  06:30:47,314 - Upotreba (m) :  na liniji 39
+INFO  06:30:47,314 - Upotreba (t) :  na liniji 41
+INFO  06:30:47,314 - Zavrsetak obrade metode main na liniji 14
+INFO  06:30:47,314 - Sintaksna i semanticka analiza uspesno zavrsena!
+INFO  06:30:47,321 - Parsiranje uspesno zavrseno!

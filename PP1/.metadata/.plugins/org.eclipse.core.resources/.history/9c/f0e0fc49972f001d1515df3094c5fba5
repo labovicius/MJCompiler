@@ -1,0 +1,413 @@
+package rs.ac.bg.etf.pp1;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Stack;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
+import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
+import rs.ac.bg.etf.pp1.ast.AddopCho;
+import rs.ac.bg.etf.pp1.ast.ConstBool;
+import rs.ac.bg.etf.pp1.ast.ConstChar;
+import rs.ac.bg.etf.pp1.ast.ConstNum;
+import rs.ac.bg.etf.pp1.ast.DesignatorEx;
+import rs.ac.bg.etf.pp1.ast.DesignatorI;
+import rs.ac.bg.etf.pp1.ast.Div;
+import rs.ac.bg.etf.pp1.ast.DsgStmtDec;
+import rs.ac.bg.etf.pp1.ast.DsgStmtEqual;
+import rs.ac.bg.etf.pp1.ast.DsgStmtInc;
+import rs.ac.bg.etf.pp1.ast.MethodDecl;
+import rs.ac.bg.etf.pp1.ast.MethodT;
+import rs.ac.bg.etf.pp1.ast.MethodV;
+import rs.ac.bg.etf.pp1.ast.Minus;
+import rs.ac.bg.etf.pp1.ast.MinusExpression;
+import rs.ac.bg.etf.pp1.ast.Mod;
+import rs.ac.bg.etf.pp1.ast.Mul;
+import rs.ac.bg.etf.pp1.ast.MulopFactorCh;
+import rs.ac.bg.etf.pp1.ast.NewTypeArr;
+import rs.ac.bg.etf.pp1.ast.Plus;
+import rs.ac.bg.etf.pp1.ast.PrintNumStmt;
+import rs.ac.bg.etf.pp1.ast.PrintStmt;
+import rs.ac.bg.etf.pp1.ast.ReadStmt;
+import rs.ac.bg.etf.pp1.ast.SyntaxNode;
+import rs.ac.bg.etf.pp1.ast.TermFact;
+import rs.ac.bg.etf.pp1.ast.Var;
+import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+
+public class CodeGenerator extends VisitorAdaptor {
+
+	private int mainPc;
+	private boolean errorDetected = false;
+
+	enum Addop {
+		ADD, SUB
+	};
+
+	enum Mulop {
+		MUL, DIV, REM
+	};
+
+	private Stack<Addop> addopStack = new Stack<Addop>();
+	private Stack<Mulop> mulopStack = new Stack<Mulop>();
+	
+	private ArrayList<Obj> definedLabels = new ArrayList<Obj>();
+	private ArrayList<Obj> gotoLabels = new ArrayList<Obj>();
+	
+	private int krpa1 = 0, krpa2 = 0, fin1 = 0, fin2 = 0;
+	Logger log = Logger.getLogger("info");
+	Logger loge = Logger.getLogger("error");
+
+	private Obj program;
+	// posto je ovde Tabela simbola sa scopeom na universe-u, moramo da
+	// prosledimo Obj koji pokazuje na program da bismo mogli da iskopamo
+	// sve promenljive koje nam trebaju
+	private String currMethod = "";
+	private Obj currentMethod = null;
+
+	public int getMainPc() {
+		return mainPc;
+	}
+
+	public boolean getErrorDetected() {
+		return errorDetected;
+	}
+
+	public CodeGenerator(Obj prog) {
+		program = prog;
+	}
+
+	/////////////////////// REPORT I ERROR LOG/////////////////////////
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		loge.error(msg.toString());
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+
+	//////////////////////////////////////////////////////////////////
+	///// METODA ZA TRAZENJE SVIH PROMENLJIVIH UNUTAR SMENE PROGRAM///
+	public Obj getVar(String name, boolean isMethod) {
+		Obj obj = Tab.find(name); // ako smo trazili nesto iz unverse-a, tipa ord/char/len onda ce naci
+		// inace treba da idemo na locals od smene program i tu da kopamo
+		if (obj == Tab.noObj) {
+			Collection<Obj> localsProgram = program.getLocalSymbols();
+			Iterator<Obj> iter = localsProgram.iterator();
+			while (iter.hasNext()) {
+				obj = iter.next();
+				if (isMethod == true && obj.getKind() == Obj.Meth && obj.getName().equals(name)) {
+					return obj;
+				} else if (isMethod == false && obj.getKind() != Obj.Meth && obj.getName().equals(name)) {
+					return obj;
+				}
+
+			} // ako si stigao dovde onda nisi nasao medj locals od programa
+				// onda je sigurno neki od locals od metode koja je trenutna
+
+			Collection<Obj> localsMethod = currentMethod.getLocalSymbols();
+			iter = localsMethod.iterator();
+			while (iter.hasNext()) {
+				obj = iter.next();
+				if (obj.getName().equals(name))
+					return obj;
+			}
+			// ako si stigao dovde onda definitivno nema tog simbola
+			obj = null;
+
+		} else {
+			return obj;
+		}
+		return null;
+	}
+
+	////////////////////////////////////////////////////////
+	////////////////////// PRINT////////////////////////////
+	public void visit(PrintStmt p) {
+		if (p.getExpr().struct == Tab.intType || p.getExpr().struct == SemanticPass.boolType) {
+			Code.loadConst(5); // promeni ako oces po defaultu da ispisuje na nekoj sirini
+			Code.put(Code.print);
+		} else {
+			Code.loadConst(1);
+			Code.put(Code.bprint);
+		}
+	}
+
+	public void visit(PrintNumStmt p) {
+		if (p.getExpr().struct == Tab.intType || p.getExpr().struct == SemanticPass.boolType) {
+			Code.loadConst(p.getN2());
+			Code.put(Code.print);
+		} else {
+			Code.loadConst(p.getN2());
+			Code.put(Code.bprint);
+		}
+	}
+
+	public void visit(ReadStmt p) {
+		if (p.getDesignator().obj.getType() == Tab.charType)
+			Code.put(Code.bread);
+		else
+			Code.put(Code.read);
+		Code.store(p.getDesignator().obj);
+	}
+
+	///////////////////////////////////////////////////////
+	/////////////////// POJAVLJIVANJE KONSTANTI U EXPR//////////////////////
+	public void visit(ConstNum p) {
+		Code.loadConst(p.getN1());
+	}
+
+	public void visit(ConstChar p) {
+		Code.loadConst(p.getC1());
+	}
+
+	public void visit(ConstBool p) {
+		Code.loadConst(p.getB1() ? 1 : 0);
+	}
+
+	///////////////////////////////////////////////////////
+	///////// METODA SET PC,FORM PARS, LOCAL VARS, ENTER///////////
+	public void visit(MethodT p) {
+		p.obj.setAdr(Code.pc);
+		SyntaxNode fja = p.getParent();
+
+		currMethod = p.getNameMeth();
+		currentMethod = getVar(currMethod, true);
+
+		VarCounter vc = new VarCounter();
+		fja.traverseTopDown(vc);
+
+		FormParamCounter fc = new FormParamCounter();
+		fja.traverseTopDown(fc);
+
+		Code.put(Code.enter);
+		Code.put(fc.getCount());
+		Code.put(fc.getCount() + vc.getCount());
+
+	}
+
+	public void visit(MethodV p) {
+		if (p.getNameMeth().equals("main")) {
+			mainPc = Code.pc;
+		}
+		p.obj.setAdr(Code.pc);
+
+		currMethod = p.getNameMeth();
+		currentMethod = getVar(currMethod, true);
+
+		SyntaxNode fja = p.getParent();
+
+		VarCounter vc = new VarCounter();
+		fja.traverseTopDown(vc);
+
+		FormParamCounter fc = new FormParamCounter();
+		fja.traverseTopDown(fc);
+
+		Code.put(Code.enter);
+		Code.put(fc.getCount());
+		Code.put(fc.getCount() + vc.getCount());
+	}
+
+	public void visit(MethodDecl p) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+		currMethod = "";
+		currentMethod = null;
+	}
+	/////////////////////////////////////////////////////////////////
+
+	public void visit(DsgStmtEqual p) {
+		// Code.store(p.getDesignator().obj);
+		Obj ret = getVar(p.getDesignator().obj.getName(), false);
+		if (ret.getFpPos() == 1 && p.getDesignator().obj.getKind() == Obj.Elem) {
+			// ako je na ind+arrlen==1 to znaci da je upisano vec i ne radis to opet
+			// ovde imas vec addr,ind,val i samo store treba
+			Code.put(Code.dup2); // addr, ind, val, ind, val
+			Code.put(Code.pop); // addr, ind, val, ind
+			Code.load(ret); //// addr, ind, val, ind, addr
+			Code.put(Code.arraylength);// addr, ind, val, ind, len
+			Code.loadConst(2);
+			Code.put(Code.div);
+			Code.put(Code.add);
+			Code.load(ret);
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			Code.put(Code.aload);
+			// broj pristupa je tu
+			Code.loadConst(1);
+			Code.putFalseJump(Code.eq, 0);
+			fin1 = Code.pc - 2;
+			Code.store(p.getDesignator().obj);
+			Code.putJump(0);
+			fin2 = Code.pc - 2;
+			Code.fixup(fin1);
+			Code.put(Code.pop);
+			Code.put(Code.pop);
+			Code.put(Code.pop);
+			Code.fixup(fin2);
+
+		} else {
+			Code.store(p.getDesignator().obj);
+		}
+
+	}
+
+	public void visit(Var p) {
+		// Obj ret = getVar(p.getDesignator().obj.getName());
+		SyntaxNode parent = p.getParent();
+
+		Code.load(p.getDesignator().obj);
+
+	}
+
+	public void visit(DesignatorI p) {
+//		SyntaxNode parent = p.getParent();
+//
+//		if (parent.getClass() == FactorDesigOne.class) {
+//			Code.load(p.obj);
+//		}
+		// Code.load(p.obj);
+	}
+
+	public void visit(DesignatorEx p) {
+		// tu je Expr vec na steku, kao ceo broj
+
+		// if (parent.getClass() == FactorDesigOne.class) {
+		Obj ret = getVar(p.getDesigName(), false);
+		if (ret == null)
+			report_error("Nema ti niza baki", null);
+
+		if (ret.getFpPos() == 1 || ret.getFpPos() == 0) {
+			// kad god pristupamo nekom indeksu niza u arrlen+ind upisemo 1 da znamo da smo
+			// pristupili ako je taj niz final
+			Code.put(Code.dup); // da imamo dupli index
+			Code.load(ret);
+			Code.put(Code.dup_x1);
+			Code.put(Code.pop);
+			Code.load(ret);
+			Code.put(Code.arraylength);
+			Code.loadConst(2);
+			Code.put(Code.div);
+			Code.put(Code.add);
+			Code.put(Code.dup2);
+			Code.put(Code.aload);
+			Code.loadConst(1);
+			Code.put(Code.add);
+			Code.put(Code.astore);
+		}
+		Code.load(ret);
+		Code.put(Code.dup_x1);
+		Code.put(Code.pop);
+		// posle ovoga imas adr, ind na steku ali moras da uvecas za 1 onu lokaciju na
+		// niz[arrlen+ind];
+	}
+
+	///////////////// ARITMETICKE OP///////////////////
+	public void visit(AddopCho p) {
+		Addop op = addopStack.pop();
+		if (op == Addop.ADD) {
+			Code.put(Code.add);
+		} else if (op == Addop.SUB) {
+			Code.put(Code.sub);
+		} else {
+			report_error("Desila se greska pri aritmetickoj operaciji add/sub", null);
+		}
+	}
+
+	public void visit(MulopFactorCh p) {
+		Mulop op = mulopStack.pop();
+		if (op == Mulop.MUL) {
+			Code.put(Code.mul);
+		} else if (op == Mulop.DIV) {
+			Code.put(Code.div);
+		} else if (op == Mulop.REM) {
+			Code.put(Code.rem);
+		} else {
+			report_error("Desila se greska pri aritmetickoj operaciji mul/div/rem", null);
+		}
+	}
+
+	public void visit(Plus p) {
+		addopStack.push(Addop.ADD);
+	}
+
+	public void visit(Minus p) {
+		addopStack.push(Addop.SUB);
+	}
+
+	public void visit(Mul p) {
+		mulopStack.push(Mulop.MUL);
+		report_info("mulovao", null);
+	}
+
+	public void visit(Div p) {
+		mulopStack.push(Mulop.DIV);
+		report_info("divovao", null);
+	}
+
+	public void visit(Mod p) {
+		mulopStack.push(Mulop.REM);
+	}
+
+	////////////////////////////////////////////
+	//////////// ALOCIRANJE NIZA/////////////////
+	public void visit(NewTypeArr p) {
+		// da zauzmemo 2* prostor da tu skladistimo nesto.. dal je final ili da brojimo
+		// broj pristupa itd..
+		Code.loadConst(2);
+		Code.put(Code.mul);
+
+		if (p.getType().struct == Tab.charType) {
+			Code.put(Code.newarray);
+			Code.put(0);
+		} else if (p.getType().struct == Tab.intType || p.getType().struct == SemanticPass.boolType) {
+			Code.put(Code.newarray);
+			Code.put(1);
+		} else {
+			report_error("Nizovi tipa " + p.getType() + " nisu podrzani", null);
+		}
+	}
+
+	////////////////////////////////////////////
+	//////////////// INCR DECR/////////////////////
+	public void visit(DsgStmtInc p) {
+		if (p.getDesignator().obj.getKind() == Obj.Elem) {
+			Code.put(Code.dup2);
+		}
+		Code.load(p.getDesignator().obj);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.store(p.getDesignator().obj);
+	}
+
+	public void visit(DsgStmtDec p) {
+		if (p.getDesignator().obj.getKind() == Obj.Elem) {
+			Code.put(Code.dup2);
+		}
+		Code.load(p.getDesignator().obj);
+		Code.loadConst(1);
+		Code.put(Code.sub);
+		Code.store(p.getDesignator().obj);
+	}
+
+	//////////////////////////////////////////////
+	public void visit(TermFact p) {
+		if (p.getParent().getClass() == MinusExpression.class)
+			Code.put(Code.neg);
+	}
+
+}

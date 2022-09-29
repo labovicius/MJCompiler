@@ -1,0 +1,191 @@
+Kompajliranje ulaznog fajla test\program.mj
+=====================SINTAKSNO_STABLO=========================
+
+Program(
+  ProgName(
+   MJProgram
+  ) [ProgName]
+  AllDeclars(
+    AllDeclars(
+      NoDeclarations(
+      ) [NoDeclarations]
+      VarDeclars(
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          VarError(
+          ) [VarError]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [VarDeclars]
+    ) [AllDeclars]
+    VarDeclars(
+      VarDeclarations(
+        Type(
+         int
+        ) [Type]
+        VarDeclar(
+         a
+        ) [VarDeclar]
+        NoVarDeclar(
+        ) [NoVarDeclar]
+      ) [VarDeclarations]
+    ) [VarDeclars]
+  ) [AllDeclars]
+  MethodDeclarations(
+    MethodDeclO(
+      MethodDecl(
+        MethodT(
+          Type(
+           int
+          ) [Type]
+         sum
+        ) [MethodT]
+        MethodPars(
+          FormParams(
+            FormParam(
+              Type(
+               int
+              ) [Type]
+             z
+            ) [FormParam]
+            FormParamCh(
+              NoFormParamCh(
+              ) [NoFormParamCh]
+              ParamError(
+              ) [ParamError]
+            ) [FormParamCh]
+          ) [FormParams]
+          NoOptionArgs(
+          ) [NoOptionArgs]
+        ) [MethodPars]
+        NoMethodVarDecl(
+        ) [NoMethodVarDecl]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            ReturnExpr(
+              ExprOne(
+                NormalExpression(
+                  TermFact(
+                    Var(
+                      DesignatorI(
+                       z
+                      ) [DesignatorI]
+                    ) [Var]
+                    NoMulopFactorCh(
+                    ) [NoMulopFactorCh]
+                  ) [TermFact]
+                  AddopCho(
+                    NoAddopCh(
+                    ) [NoAddopCh]
+                    Plus(
+                    ) [Plus]
+                    TermFact(
+                      Var(
+                        DesignatorI(
+                         d
+                        ) [DesignatorI]
+                      ) [Var]
+                      NoMulopFactorCh(
+                      ) [NoMulopFactorCh]
+                    ) [TermFact]
+                  ) [AddopCho]
+                ) [NormalExpression]
+              ) [ExprOne]
+            ) [ReturnExpr]
+          ) [MatchedStmt]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclO]
+    MethodDecl(
+      MethodV(
+       main
+      ) [MethodV]
+      MethodPars(
+        NoFormParam(
+        ) [NoFormParam]
+        NoOptionArgs(
+        ) [NoOptionArgs]
+      ) [MethodPars]
+      MethodVarDecl(
+        NoMethodVarDecl(
+        ) [NoMethodVarDecl]
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          VarDeclar(
+           a
+          ) [VarDeclar]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [MethodVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            MatchedStmt(
+              MatchedDerived1(
+              ) [MatchedDerived1]
+            ) [MatchedStmt]
+          ) [Statements]
+          UnmatchedStmt(
+            IfCondError(
+            ) [IfCondError]
+          ) [UnmatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          ListStmt(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              MatchedStmt(
+                DesStmt(
+                  DsgStmtEqual(
+                    DesignatorI(
+                     a
+                    ) [DesignatorI]
+                    Assign(
+                    ) [Assign]
+                    ExprOne(
+                      NormalExpression(
+                        TermFact(
+                          ConstNum(
+                           1
+                          ) [ConstNum]
+                          NoMulopFactorCh(
+                          ) [NoMulopFactorCh]
+                        ) [TermFact]
+                        NoAddopCh(
+                        ) [NoAddopCh]
+                      ) [NormalExpression]
+                    ) [ExprOne]
+                  ) [DsgStmtEqual]
+                ) [DesStmt]
+              ) [MatchedStmt]
+            ) [Statements]
+          ) [ListStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+
+
+================SEMANTICKA OBRADA====================
+
+Deklarisana globalna promenljiva a Var a: int, 0, 0  na liniji 5
+Obrada metode sum s povratnom vrednoscu na liniji 8
+Obradjen parametar metode sum na liniji 8
+Upotreba (z) : Var z: int, 0, 1  na liniji 10
+Upotreba (noObj) : Var noObj: notype, -1, -1  na liniji 10
+Zavrsetak obrade metode sum na liniji 8
+Obrada metode main bez povratne vrednosti na liniji 13
+Upotreba (a) : Var a: int, 0, 0  na liniji 19
+Zavrsetak obrade metode main na liniji 13

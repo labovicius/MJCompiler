@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MJCompiler/spec/mjlexer.lex&apos; to &apos;mjlexer.flex&apos;" description="Rename resource &apos;mjlexer.lex&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="spec/mjlexer.lex" name="mjlexer.flex" stamp="1654709716016" updateReferences="true"/>
+</session>

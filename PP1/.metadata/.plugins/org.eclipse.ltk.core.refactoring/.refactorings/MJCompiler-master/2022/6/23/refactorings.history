@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;lib&apos;&#x0D;&#x0A;- Original project: &apos;MJCompiler-master&apos;&#x0D;&#x0A;- Destination element: &apos;lib&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     cup_v10k.jar&#x0D;&#x0A;     JFlex.jar&#x0D;&#x0A;     log4j-1.2.17.jar&#x0D;&#x0A;     symboltable.jar" description="Copy files" element1="lib/cup_v10k.jar" element2="lib/JFlex.jar" element3="lib/log4j-1.2.17.jar" element4="lib/symboltable.jar" files="4" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1654706209870" target="/Projekat/lib" units="0" version="1.0"/>
+</session>

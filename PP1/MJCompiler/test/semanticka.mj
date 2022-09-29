@@ -1,0 +1,44 @@
+// Test za semanticku analizu
+
+program MJProgram
+	const int konstanta = 1;
+{
+	int funkcija(int m) {
+		// nema return
+	}
+
+	void main() 
+	int pom; char pom; // greska - pom je deklarisano
+	int num; char ch; bool b;
+	int niz[];
+	{
+		
+		
+		// greska - nekompatibilni tipovi
+		num = 'a'; 
+		num = true;
+		ch = 1;
+		ch = true;
+		b = 1;
+		b = 'a';
+		
+		// greska - vrednost moze da se dodeli samo promenljivoj ili elementu niza
+		konstanta = 2;
+		
+		// greska - tip za inc i dec mora biti int
+		ch++;
+		b--;
+		
+		// greska - tip mora biti int
+		ch = -'a';
+		
+		// greska - tip za alociranje niza mora biti int
+		niz = new int['a'];
+				
+		niz[true] = 1; // greska - nevalidan pristup elementu niza
+		
+		num = num + 'a'; // greska - clanovi izraza nisu tipa int i nisu kompatibilni
+		num = num * 'a'; // greska - clanovi izraza nisu tipa int
+		
+	}
+}

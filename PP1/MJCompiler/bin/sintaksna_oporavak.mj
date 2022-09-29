@@ -1,0 +1,23 @@
+// Sintaksna analiza i oporavak od gresaka
+
+program MJProgram
+	int ; // greska za globalne promenljive
+	int x,y;
+{
+
+	int funk(int m, int m * )  // greska u def formalnih parametara
+	{
+	 	return m + n;
+	}
+	
+	void main() 
+	int x;
+	{
+		x = 5 + ; // greska pri dodeli iskaza
+		
+		if (x > y + ) { // greska unutar if 
+			x = 1;
+		}
+	
+	}
+}

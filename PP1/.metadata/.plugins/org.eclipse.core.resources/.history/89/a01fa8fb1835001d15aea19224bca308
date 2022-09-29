@@ -1,0 +1,954 @@
+Kompajliranje ulaznog fajla test\program.mj
+=====================SINTAKSNO_STABLO=========================
+
+Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  AllDeclars(
+    AllDeclars(
+      AllDeclars(
+        AllDeclars(
+          AllDeclars(
+            AllDeclars(
+              NoDeclarations(
+              ) [NoDeclarations]
+              ConstDeclars(
+                ConstDeclarations(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstDeclar(
+                   nula
+                    ConstDeclarNum(
+                     0
+                    ) [ConstDeclarNum]
+                  ) [ConstDeclar]
+                  NoConstDeclar(
+                  ) [NoConstDeclar]
+                ) [ConstDeclarations]
+              ) [ConstDeclars]
+            ) [AllDeclars]
+            ConstDeclars(
+              ConstDeclarations(
+                Type(
+                 int
+                ) [Type]
+                ConstDeclar(
+                 jedan
+                  ConstDeclarNum(
+                   1
+                  ) [ConstDeclarNum]
+                ) [ConstDeclar]
+                NoConstDeclar(
+                ) [NoConstDeclar]
+              ) [ConstDeclarations]
+            ) [ConstDeclars]
+          ) [AllDeclars]
+          ConstDeclars(
+            ConstDeclarations(
+              Type(
+               int
+              ) [Type]
+              ConstDeclar(
+               tri
+                ConstDeclarNum(
+                 3
+                ) [ConstDeclarNum]
+              ) [ConstDeclar]
+              NoConstDeclar(
+              ) [NoConstDeclar]
+            ) [ConstDeclarations]
+          ) [ConstDeclars]
+        ) [AllDeclars]
+        ConstDeclars(
+          ConstDeclarations(
+            Type(
+             int
+            ) [Type]
+            ConstDeclar(
+             pet
+              ConstDeclarNum(
+               5
+              ) [ConstDeclarNum]
+            ) [ConstDeclar]
+            NoConstDeclar(
+            ) [NoConstDeclar]
+          ) [ConstDeclarations]
+        ) [ConstDeclars]
+      ) [AllDeclars]
+      VarDeclars(
+        VarDeclarations(
+          Type(
+           int
+          ) [Type]
+          VarDeclarArr(
+           niz
+          ) [VarDeclarArr]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [VarDeclars]
+    ) [AllDeclars]
+    VarDeclars(
+      VarDeclarations(
+        Type(
+         char
+        ) [Type]
+        VarDeclarArr(
+         nizch
+        ) [VarDeclarArr]
+        NoVarDeclar(
+        ) [NoVarDeclar]
+      ) [VarDeclarations]
+    ) [VarDeclars]
+  ) [AllDeclars]
+  MethodDeclO(
+    MethodDecl(
+      MethodV(
+       main
+      ) [MethodV]
+      MethodPars(
+        NoFormParam(
+        ) [NoFormParam]
+        NoOptionArgs(
+        ) [NoOptionArgs]
+      ) [MethodPars]
+      MethodVarDecl(
+        MethodVarDecl(
+          NoMethodVarDecl(
+          ) [NoMethodVarDecl]
+          VarDeclarations(
+            Type(
+             int
+            ) [Type]
+            VarDeclar(
+             bodovi
+            ) [VarDeclar]
+            NoVarDeclar(
+            ) [NoVarDeclar]
+          ) [VarDeclarations]
+        ) [MethodVarDecl]
+        VarDeclarations(
+          Type(
+           bool
+          ) [Type]
+          VarDeclar(
+           bt
+          ) [VarDeclar]
+          NoVarDeclar(
+          ) [NoVarDeclar]
+        ) [VarDeclarations]
+      ) [MethodVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        Statements(
+                          Statements(
+                            Statements(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    Statements(
+                                      Statements(
+                                        Statements(
+                                          Statements(
+                                            NoStmt(
+                                            ) [NoStmt]
+                                            MatchedStmt(
+                                              DesStmt(
+                                                DsgStmtEqual(
+                                                  DesignatorI(
+                                                   bodovi
+                                                  ) [DesignatorI]
+                                                  Assign(
+                                                  ) [Assign]
+                                                  ExprOne(
+                                                    NormalExpression(
+                                                      TermFact(
+                                                        ConstNum(
+                                                         0
+                                                        ) [ConstNum]
+                                                        NoMulopFactorCh(
+                                                        ) [NoMulopFactorCh]
+                                                      ) [TermFact]
+                                                      NoAddopCh(
+                                                      ) [NoAddopCh]
+                                                    ) [NormalExpression]
+                                                  ) [ExprOne]
+                                                ) [DsgStmtEqual]
+                                              ) [DesStmt]
+                                            ) [MatchedStmt]
+                                          ) [Statements]
+                                          MatchedStmt(
+                                            DesStmt(
+                                              DsgStmtInc(
+                                                DesignatorI(
+                                                 bodovi
+                                                ) [DesignatorI]
+                                              ) [DsgStmtInc]
+                                            ) [DesStmt]
+                                          ) [MatchedStmt]
+                                        ) [Statements]
+                                        MatchedStmt(
+                                          DesStmt(
+                                            DsgStmtEqual(
+                                              DesignatorI(
+                                               bodovi
+                                              ) [DesignatorI]
+                                              Assign(
+                                              ) [Assign]
+                                              ExprOne(
+                                                NormalExpression(
+                                                  TermFact(
+                                                    Var(
+                                                      DesignatorI(
+                                                       bodovi
+                                                      ) [DesignatorI]
+                                                    ) [Var]
+                                                    MulopFactorCho(
+                                                      NoMulopFactorCh(
+                                                      ) [NoMulopFactorCh]
+                                                      Mul(
+                                                      ) [Mul]
+                                                      Var(
+                                                        DesignatorI(
+                                                         pet
+                                                        ) [DesignatorI]
+                                                      ) [Var]
+                                                    ) [MulopFactorCho]
+                                                  ) [TermFact]
+                                                  NoAddopCh(
+                                                  ) [NoAddopCh]
+                                                ) [NormalExpression]
+                                              ) [ExprOne]
+                                            ) [DsgStmtEqual]
+                                          ) [DesStmt]
+                                        ) [MatchedStmt]
+                                      ) [Statements]
+                                      MatchedStmt(
+                                        DesStmt(
+                                          DsgStmtDec(
+                                            DesignatorI(
+                                             bodovi
+                                            ) [DesignatorI]
+                                          ) [DsgStmtDec]
+                                        ) [DesStmt]
+                                      ) [MatchedStmt]
+                                    ) [Statements]
+                                    MatchedStmt(
+                                      PrintStmt(
+                                        ExprOne(
+                                          NormalExpression(
+                                            TermFact(
+                                              Var(
+                                                DesignatorI(
+                                                 bodovi
+                                                ) [DesignatorI]
+                                              ) [Var]
+                                              NoMulopFactorCh(
+                                              ) [NoMulopFactorCh]
+                                            ) [TermFact]
+                                            NoAddopCh(
+                                            ) [NoAddopCh]
+                                          ) [NormalExpression]
+                                        ) [ExprOne]
+                                      ) [PrintStmt]
+                                    ) [MatchedStmt]
+                                  ) [Statements]
+                                  MatchedStmt(
+                                    DesStmt(
+                                      DsgStmtEqual(
+                                        DesignatorI(
+                                         niz
+                                        ) [DesignatorI]
+                                        Assign(
+                                        ) [Assign]
+                                        ExprOne(
+                                          NormalExpression(
+                                            TermFact(
+                                              NewTypeArr(
+                                                Type(
+                                                 int
+                                                ) [Type]
+                                                ExprOne(
+                                                  NormalExpression(
+                                                    TermFact(
+                                                      ConstNum(
+                                                       3
+                                                      ) [ConstNum]
+                                                      NoMulopFactorCh(
+                                                      ) [NoMulopFactorCh]
+                                                    ) [TermFact]
+                                                    NoAddopCh(
+                                                    ) [NoAddopCh]
+                                                  ) [NormalExpression]
+                                                ) [ExprOne]
+                                              ) [NewTypeArr]
+                                              NoMulopFactorCh(
+                                              ) [NoMulopFactorCh]
+                                            ) [TermFact]
+                                            NoAddopCh(
+                                            ) [NoAddopCh]
+                                          ) [NormalExpression]
+                                        ) [ExprOne]
+                                      ) [DsgStmtEqual]
+                                    ) [DesStmt]
+                                  ) [MatchedStmt]
+                                ) [Statements]
+                                MatchedStmt(
+                                  DesStmt(
+                                    DsgStmtEqual(
+                                      DesignatorEx(
+                                       niz
+                                        ExprOne(
+                                          NormalExpression(
+                                            TermFact(
+                                              Var(
+                                                DesignatorI(
+                                                 nula
+                                                ) [DesignatorI]
+                                              ) [Var]
+                                              NoMulopFactorCh(
+                                              ) [NoMulopFactorCh]
+                                            ) [TermFact]
+                                            NoAddopCh(
+                                            ) [NoAddopCh]
+                                          ) [NormalExpression]
+                                        ) [ExprOne]
+                                      ) [DesignatorEx]
+                                      Assign(
+                                      ) [Assign]
+                                      ExprOne(
+                                        NormalExpression(
+                                          TermFact(
+                                            Var(
+                                              DesignatorI(
+                                               jedan
+                                              ) [DesignatorI]
+                                            ) [Var]
+                                            NoMulopFactorCh(
+                                            ) [NoMulopFactorCh]
+                                          ) [TermFact]
+                                          NoAddopCh(
+                                          ) [NoAddopCh]
+                                        ) [NormalExpression]
+                                      ) [ExprOne]
+                                    ) [DsgStmtEqual]
+                                  ) [DesStmt]
+                                ) [MatchedStmt]
+                              ) [Statements]
+                              MatchedStmt(
+                                DesStmt(
+                                  DsgStmtEqual(
+                                    DesignatorEx(
+                                     niz
+                                      ExprOne(
+                                        NormalExpression(
+                                          TermFact(
+                                            ConstNum(
+                                             1
+                                            ) [ConstNum]
+                                            NoMulopFactorCh(
+                                            ) [NoMulopFactorCh]
+                                          ) [TermFact]
+                                          NoAddopCh(
+                                          ) [NoAddopCh]
+                                        ) [NormalExpression]
+                                      ) [ExprOne]
+                                    ) [DesignatorEx]
+                                    Assign(
+                                    ) [Assign]
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           2
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [DsgStmtEqual]
+                                ) [DesStmt]
+                              ) [MatchedStmt]
+                            ) [Statements]
+                            MatchedStmt(
+                              DesStmt(
+                                DsgStmtEqual(
+                                  DesignatorI(
+                                   bodovi
+                                  ) [DesignatorI]
+                                  Assign(
+                                  ) [Assign]
+                                  ExprOne(
+                                    NormalExpression(
+                                      TermFact(
+                                        Var(
+                                          DesignatorEx(
+                                           niz
+                                            ExprOne(
+                                              NormalExpression(
+                                                TermFact(
+                                                  ConstNum(
+                                                   2
+                                                  ) [ConstNum]
+                                                  NoMulopFactorCh(
+                                                  ) [NoMulopFactorCh]
+                                                ) [TermFact]
+                                                NoAddopCh(
+                                                ) [NoAddopCh]
+                                              ) [NormalExpression]
+                                            ) [ExprOne]
+                                          ) [DesignatorEx]
+                                        ) [Var]
+                                        MulopFactorCho(
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                          Div(
+                                          ) [Div]
+                                          Var(
+                                            DesignatorEx(
+                                             niz
+                                              ExprOne(
+                                                NormalExpression(
+                                                  TermFact(
+                                                    ConstNum(
+                                                     0
+                                                    ) [ConstNum]
+                                                    NoMulopFactorCh(
+                                                    ) [NoMulopFactorCh]
+                                                  ) [TermFact]
+                                                  NoAddopCh(
+                                                  ) [NoAddopCh]
+                                                ) [NormalExpression]
+                                              ) [ExprOne]
+                                            ) [DesignatorEx]
+                                          ) [Var]
+                                        ) [MulopFactorCho]
+                                      ) [TermFact]
+                                      NoAddopCh(
+                                      ) [NoAddopCh]
+                                    ) [NormalExpression]
+                                  ) [ExprOne]
+                                ) [DsgStmtEqual]
+                              ) [DesStmt]
+                            ) [MatchedStmt]
+                          ) [Statements]
+                          MatchedStmt(
+                            PrintStmt(
+                              ExprOne(
+                                NormalExpression(
+                                  TermFact(
+                                    Var(
+                                      DesignatorI(
+                                       bodovi
+                                      ) [DesignatorI]
+                                    ) [Var]
+                                    NoMulopFactorCh(
+                                    ) [NoMulopFactorCh]
+                                  ) [TermFact]
+                                  NoAddopCh(
+                                  ) [NoAddopCh]
+                                ) [NormalExpression]
+                              ) [ExprOne]
+                            ) [PrintStmt]
+                          ) [MatchedStmt]
+                        ) [Statements]
+                        MatchedStmt(
+                          PrintStmt(
+                            ExprOne(
+                              NormalExpression(
+                                TermFact(
+                                  Var(
+                                    DesignatorEx(
+                                     niz
+                                      ExprOne(
+                                        NormalExpression(
+                                          TermFact(
+                                            ConstNum(
+                                             2
+                                            ) [ConstNum]
+                                            NoMulopFactorCh(
+                                            ) [NoMulopFactorCh]
+                                          ) [TermFact]
+                                          NoAddopCh(
+                                          ) [NoAddopCh]
+                                        ) [NormalExpression]
+                                      ) [ExprOne]
+                                    ) [DesignatorEx]
+                                  ) [Var]
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                ) [TermFact]
+                                NoAddopCh(
+                                ) [NoAddopCh]
+                              ) [NormalExpression]
+                            ) [ExprOne]
+                          ) [PrintStmt]
+                        ) [MatchedStmt]
+                      ) [Statements]
+                      MatchedStmt(
+                        DesStmt(
+                          DsgStmtEqual(
+                            DesignatorI(
+                             nizch
+                            ) [DesignatorI]
+                            Assign(
+                            ) [Assign]
+                            ExprOne(
+                              NormalExpression(
+                                TermFact(
+                                  NewTypeArr(
+                                    Type(
+                                     char
+                                    ) [Type]
+                                    ExprOne(
+                                      NormalExpression(
+                                        TermFact(
+                                          ConstNum(
+                                           3
+                                          ) [ConstNum]
+                                          NoMulopFactorCh(
+                                          ) [NoMulopFactorCh]
+                                        ) [TermFact]
+                                        NoAddopCh(
+                                        ) [NoAddopCh]
+                                      ) [NormalExpression]
+                                    ) [ExprOne]
+                                  ) [NewTypeArr]
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                ) [TermFact]
+                                NoAddopCh(
+                                ) [NoAddopCh]
+                              ) [NormalExpression]
+                            ) [ExprOne]
+                          ) [DsgStmtEqual]
+                        ) [DesStmt]
+                      ) [MatchedStmt]
+                    ) [Statements]
+                    MatchedStmt(
+                      DesStmt(
+                        DsgStmtEqual(
+                          DesignatorEx(
+                           nizch
+                            ExprOne(
+                              NormalExpression(
+                                TermFact(
+                                  ConstNum(
+                                   0
+                                  ) [ConstNum]
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                ) [TermFact]
+                                NoAddopCh(
+                                ) [NoAddopCh]
+                              ) [NormalExpression]
+                            ) [ExprOne]
+                          ) [DesignatorEx]
+                          Assign(
+                          ) [Assign]
+                          ExprOne(
+                            NormalExpression(
+                              TermFact(
+                                ConstChar(
+                                 a
+                                ) [ConstChar]
+                                NoMulopFactorCh(
+                                ) [NoMulopFactorCh]
+                              ) [TermFact]
+                              NoAddopCh(
+                              ) [NoAddopCh]
+                            ) [NormalExpression]
+                          ) [ExprOne]
+                        ) [DsgStmtEqual]
+                      ) [DesStmt]
+                    ) [MatchedStmt]
+                  ) [Statements]
+                  MatchedStmt(
+                    DesStmt(
+                      DsgStmtEqual(
+                        DesignatorEx(
+                         nizch
+                          ExprOne(
+                            NormalExpression(
+                              TermFact(
+                                Var(
+                                  DesignatorI(
+                                   jedan
+                                  ) [DesignatorI]
+                                ) [Var]
+                                NoMulopFactorCh(
+                                ) [NoMulopFactorCh]
+                              ) [TermFact]
+                              NoAddopCh(
+                              ) [NoAddopCh]
+                            ) [NormalExpression]
+                          ) [ExprOne]
+                        ) [DesignatorEx]
+                        Assign(
+                        ) [Assign]
+                        ExprOne(
+                          NormalExpression(
+                            TermFact(
+                              ConstChar(
+                               b
+                              ) [ConstChar]
+                              NoMulopFactorCh(
+                              ) [NoMulopFactorCh]
+                            ) [TermFact]
+                            NoAddopCh(
+                            ) [NoAddopCh]
+                          ) [NormalExpression]
+                        ) [ExprOne]
+                      ) [DsgStmtEqual]
+                    ) [DesStmt]
+                  ) [MatchedStmt]
+                ) [Statements]
+                MatchedStmt(
+                  DesStmt(
+                    DsgStmtEqual(
+                      DesignatorEx(
+                       nizch
+                        ExprOne(
+                          NormalExpression(
+                            TermFact(
+                              Var(
+                                DesignatorI(
+                                 pet
+                                ) [DesignatorI]
+                              ) [Var]
+                              NoMulopFactorCh(
+                              ) [NoMulopFactorCh]
+                            ) [TermFact]
+                            AddopCho(
+                              NoAddopCh(
+                              ) [NoAddopCh]
+                              Minus(
+                              ) [Minus]
+                              TermFact(
+                                ConstNum(
+                                 3
+                                ) [ConstNum]
+                                NoMulopFactorCh(
+                                ) [NoMulopFactorCh]
+                              ) [TermFact]
+                            ) [AddopCho]
+                          ) [NormalExpression]
+                        ) [ExprOne]
+                      ) [DesignatorEx]
+                      Assign(
+                      ) [Assign]
+                      ExprOne(
+                        NormalExpression(
+                          TermFact(
+                            ConstChar(
+                             c
+                            ) [ConstChar]
+                            NoMulopFactorCh(
+                            ) [NoMulopFactorCh]
+                          ) [TermFact]
+                          NoAddopCh(
+                          ) [NoAddopCh]
+                        ) [NormalExpression]
+                      ) [ExprOne]
+                    ) [DsgStmtEqual]
+                  ) [DesStmt]
+                ) [MatchedStmt]
+              ) [Statements]
+              MatchedStmt(
+                PrintStmt(
+                  ExprOne(
+                    NormalExpression(
+                      TermFact(
+                        Var(
+                          DesignatorEx(
+                           nizch
+                            ExprOne(
+                              NormalExpression(
+                                TermFact(
+                                  ConstNum(
+                                   1
+                                  ) [ConstNum]
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                ) [TermFact]
+                                NoAddopCh(
+                                ) [NoAddopCh]
+                              ) [NormalExpression]
+                            ) [ExprOne]
+                          ) [DesignatorEx]
+                        ) [Var]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                      NoAddopCh(
+                      ) [NoAddopCh]
+                    ) [NormalExpression]
+                  ) [ExprOne]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              PrintStmt(
+                ExprOne(
+                  NormalExpression(
+                    TermFact(
+                      Var(
+                        DesignatorEx(
+                         nizch
+                          ExprOne(
+                            NormalExpression(
+                              TermFact(
+                                Var(
+                                  DesignatorI(
+                                   jedan
+                                  ) [DesignatorI]
+                                ) [Var]
+                                MulopFactorCho(
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                  Mul(
+                                  ) [Mul]
+                                  ConstNum(
+                                   2
+                                  ) [ConstNum]
+                                ) [MulopFactorCho]
+                              ) [TermFact]
+                              NoAddopCh(
+                              ) [NoAddopCh]
+                            ) [NormalExpression]
+                          ) [ExprOne]
+                        ) [DesignatorEx]
+                      ) [Var]
+                      NoMulopFactorCh(
+                      ) [NoMulopFactorCh]
+                    ) [TermFact]
+                    NoAddopCh(
+                    ) [NoAddopCh]
+                  ) [NormalExpression]
+                ) [ExprOne]
+              ) [PrintStmt]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            DesStmt(
+              DsgStmtEqual(
+                DesignatorI(
+                 bodovi
+                ) [DesignatorI]
+                Assign(
+                ) [Assign]
+                ExprOne(
+                  NormalExpression(
+                    TermFact(
+                      Var(
+                        DesignatorI(
+                         bodovi
+                        ) [DesignatorI]
+                      ) [Var]
+                      NoMulopFactorCh(
+                      ) [NoMulopFactorCh]
+                    ) [TermFact]
+                    AddopCho(
+                      AddopCho(
+                        NoAddopCh(
+                        ) [NoAddopCh]
+                        Plus(
+                        ) [Plus]
+                        TermFact(
+                          ParenExpr(
+                            ExprOne(
+                              NormalExpression(
+                                TermFact(
+                                  Var(
+                                    DesignatorI(
+                                     pet
+                                    ) [DesignatorI]
+                                  ) [Var]
+                                  MulopFactorCho(
+                                    NoMulopFactorCh(
+                                    ) [NoMulopFactorCh]
+                                    Mul(
+                                    ) [Mul]
+                                    Var(
+                                      DesignatorI(
+                                       jedan
+                                      ) [DesignatorI]
+                                    ) [Var]
+                                  ) [MulopFactorCho]
+                                ) [TermFact]
+                                AddopCho(
+                                  NoAddopCh(
+                                  ) [NoAddopCh]
+                                  Minus(
+                                  ) [Minus]
+                                  TermFact(
+                                    ConstNum(
+                                     1
+                                    ) [ConstNum]
+                                    NoMulopFactorCh(
+                                    ) [NoMulopFactorCh]
+                                  ) [TermFact]
+                                ) [AddopCho]
+                              ) [NormalExpression]
+                            ) [ExprOne]
+                          ) [ParenExpr]
+                          MulopFactorCho(
+                            NoMulopFactorCh(
+                            ) [NoMulopFactorCh]
+                            Mul(
+                            ) [Mul]
+                            Var(
+                              DesignatorI(
+                               bodovi
+                              ) [DesignatorI]
+                            ) [Var]
+                          ) [MulopFactorCho]
+                        ) [TermFact]
+                      ) [AddopCho]
+                      Minus(
+                      ) [Minus]
+                      TermFact(
+                        ParenExpr(
+                          ExprOne(
+                            NormalExpression(
+                              TermFact(
+                                ConstNum(
+                                 3
+                                ) [ConstNum]
+                                MulopFactorCho(
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                  Mod(
+                                  ) [Mod]
+                                  ConstNum(
+                                   2
+                                  ) [ConstNum]
+                                ) [MulopFactorCho]
+                              ) [TermFact]
+                              AddopCho(
+                                AddopCho(
+                                  NoAddopCh(
+                                  ) [NoAddopCh]
+                                  Plus(
+                                  ) [Plus]
+                                  TermFact(
+                                    ConstNum(
+                                     3
+                                    ) [ConstNum]
+                                    MulopFactorCho(
+                                      NoMulopFactorCh(
+                                      ) [NoMulopFactorCh]
+                                      Mul(
+                                      ) [Mul]
+                                      ConstNum(
+                                       2
+                                      ) [ConstNum]
+                                    ) [MulopFactorCho]
+                                  ) [TermFact]
+                                ) [AddopCho]
+                                Minus(
+                                ) [Minus]
+                                TermFact(
+                                  ConstNum(
+                                   3
+                                  ) [ConstNum]
+                                  NoMulopFactorCh(
+                                  ) [NoMulopFactorCh]
+                                ) [TermFact]
+                              ) [AddopCho]
+                            ) [NormalExpression]
+                          ) [ExprOne]
+                        ) [ParenExpr]
+                        NoMulopFactorCh(
+                        ) [NoMulopFactorCh]
+                      ) [TermFact]
+                    ) [AddopCho]
+                  ) [NormalExpression]
+                ) [ExprOne]
+              ) [DsgStmtEqual]
+            ) [DesStmt]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            ExprOne(
+              NormalExpression(
+                TermFact(
+                  Var(
+                    DesignatorI(
+                     bodovi
+                    ) [DesignatorI]
+                  ) [Var]
+                  NoMulopFactorCh(
+                  ) [NoMulopFactorCh]
+                ) [TermFact]
+                NoAddopCh(
+                ) [NoAddopCh]
+              ) [NormalExpression]
+            ) [ExprOne]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclO]
+) [Program]
+
+
+================SEMANTICKA OBRADA====================
+
+Deklarisana konstanta nula Con nula: int, 0, 0  na liniji 5
+Deklarisana konstanta jedan Con jedan: int, 0, 0  na liniji 6
+Deklarisana konstanta tri Con tri: int, 0, 0  na liniji 7
+Deklarisana konstanta pet Con pet: int, 0, 0  na liniji 8
+Deklarisan globalni niz niz Var niz: Arr of int, 0, 0  na liniji 10
+Deklarisan globalni niz nizch Var nizch: Arr of char, 1, 0  na liniji 11
+Obrada metode main bez povratne vrednosti na liniji 14
+Deklarisana lokalna promenljiva bodovi Var bodovi: int, 0, 1  na liniji 15
+Deklarisana lokalna promenljiva bt Var bt: bool, 1, 1  na liniji 16
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 18
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 19
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 20
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 20
+Upotreba (pet) : Con pet: int, 5, 0  na liniji 20
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 21
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 22
+Upotreba (niz) : Var niz: Arr of int, 0, 0  na liniji 25
+Upotreba (nula) : Con nula: int, 0, 0  na liniji 26
+Upotreba (niz) : Var niz: Arr of int, 0, 0  na liniji 26
+Upotreba (jedan) : Con jedan: int, 1, 0  na liniji 26
+Upotreba (niz) : Var niz: Arr of int, 0, 0  na liniji 27
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 28
+Upotreba (niz) : Var niz: Arr of int, 0, 0  na liniji 28
+Upotreba (niz) : Var niz: Arr of int, 0, 0  na liniji 28
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 29
+Upotreba (niz) : Var niz: Arr of int, 0, 0  na liniji 30
+Upotreba (nizch) : Var nizch: Arr of char, 1, 0  na liniji 33
+Upotreba (nizch) : Var nizch: Arr of char, 1, 0  na liniji 34
+Upotreba (jedan) : Con jedan: int, 1, 0  na liniji 35
+Upotreba (nizch) : Var nizch: Arr of char, 1, 0  na liniji 35
+Upotreba (pet) : Con pet: int, 5, 0  na liniji 36
+Upotreba (nizch) : Var nizch: Arr of char, 1, 0  na liniji 36
+Upotreba (nizch) : Var nizch: Arr of char, 1, 0  na liniji 37
+Upotreba (jedan) : Con jedan: int, 1, 0  na liniji 38
+Upotreba (nizch) : Var nizch: Arr of char, 1, 0  na liniji 38
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 41
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 41
+Upotreba (pet) : Con pet: int, 5, 0  na liniji 41
+Upotreba (jedan) : Con jedan: int, 1, 0  na liniji 41
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 41
+Upotreba (bodovi) : Var bodovi: int, 0, 1  na liniji 42
+Zavrsetak obrade metode main na liniji 14
+Sintaksna i semanticka analiza uspesno zavrsena!
+Parsiranje uspesno zavrseno!

@@ -1,0 +1,64 @@
+// Test za semanticku analizu
+
+program MJProgram
+	const int cnst = 1;
+{
+	int fun(int x) {
+		// nema return
+	}
+
+	void main() 
+	int b; char b; // greska - 'b' je vec deklarisano
+	int num; char character; bool boolean;
+	int niz[], niz1[];
+	{
+		
+		
+		// greska - nekompatibilni tipovi za dodelu vrednosti
+		num = 'a'; 
+		num = true;
+		character = 1;
+		character = true;
+		boolean = 1;
+		boolean = 'a';
+		
+		// greska - vrednost moze da se dodeli samo promenljivoj, elementu niza ili polju objekta
+		cnst = 2;
+		
+		// greska - tip za inc i dec mora biti int
+		character++;
+		boolean--;
+		
+		// greska - tip mora biti int
+		character = -'a';
+		
+		// greska - tip za alociranje niza mora biti int
+		niz = new int['a'];
+		
+		do {
+			num++;
+			break;
+			continue;
+		} while(num < 10);
+		
+		break; // Semanticka greska - break iskaz van petlje
+		continue; // Semanticka greska - continue iskaz van petlje
+		
+		if (niz < niz1) { // Semanticka greska - relacioni izraz sa referentnim tipovima moze koristiti samo '==' i '!='
+			num = 1;
+		}
+		
+		if (num) { // Semanticka greska - if uslov nije tipa bool
+			num = 2;
+		}
+		
+		do {
+			niz[true] = 1; // Semanticka greska - nevalidan pristup elementu niza
+		} while(num); // Semanticka greska - while uslov nije tipa bool
+		
+		num = num + 'a'; // Semanticka greska - clanovi izraza nisu tipa int i nisu kompatibilni
+		num = num * 'a'; // Semanticka greska - clanovi izraza nisu tipa int
+		
+		num = boolean ? 1 : 'a'; // Semanticka greska - drugi i treci izraz moraju biti istog tipa
+	}
+}

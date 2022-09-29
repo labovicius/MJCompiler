@@ -1,0 +1,490 @@
+package rs.ac.bg.etf.pp1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.log4j.Logger;
+
+import rs.ac.bg.etf.pp1.ast.AddopCho;
+import rs.ac.bg.etf.pp1.ast.ConstBool;
+import rs.ac.bg.etf.pp1.ast.ConstChar;
+import rs.ac.bg.etf.pp1.ast.ConstDeclar;
+import rs.ac.bg.etf.pp1.ast.ConstDeclarBool;
+import rs.ac.bg.etf.pp1.ast.ConstDeclarChar;
+import rs.ac.bg.etf.pp1.ast.ConstDeclarNum;
+import rs.ac.bg.etf.pp1.ast.ConstDeclarations;
+import rs.ac.bg.etf.pp1.ast.ConstNum;
+import rs.ac.bg.etf.pp1.ast.DQTerm;
+import rs.ac.bg.etf.pp1.ast.DesignatorEx;
+import rs.ac.bg.etf.pp1.ast.DesignatorI;
+import rs.ac.bg.etf.pp1.ast.DsgStmtDec;
+import rs.ac.bg.etf.pp1.ast.DsgStmtEqual;
+import rs.ac.bg.etf.pp1.ast.DsgStmtInc;
+import rs.ac.bg.etf.pp1.ast.ExprOne;
+import rs.ac.bg.etf.pp1.ast.FormParam;
+import rs.ac.bg.etf.pp1.ast.FormParamArr;
+import rs.ac.bg.etf.pp1.ast.LeftQuest;
+import rs.ac.bg.etf.pp1.ast.MethodDecl;
+import rs.ac.bg.etf.pp1.ast.MethodT;
+import rs.ac.bg.etf.pp1.ast.MethodV;
+import rs.ac.bg.etf.pp1.ast.MinusExpression;
+import rs.ac.bg.etf.pp1.ast.MulopFactorCho;
+import rs.ac.bg.etf.pp1.ast.NewTypeArr;
+import rs.ac.bg.etf.pp1.ast.NormalExpression;
+import rs.ac.bg.etf.pp1.ast.ParenExpr;
+import rs.ac.bg.etf.pp1.ast.PrintNumStmt;
+import rs.ac.bg.etf.pp1.ast.PrintStmt;
+import rs.ac.bg.etf.pp1.ast.ProgName;
+import rs.ac.bg.etf.pp1.ast.Program;
+import rs.ac.bg.etf.pp1.ast.ReadStmt;
+import rs.ac.bg.etf.pp1.ast.ReturnExpr;
+import rs.ac.bg.etf.pp1.ast.ReturnNoExpr;
+import rs.ac.bg.etf.pp1.ast.RightQuest;
+import rs.ac.bg.etf.pp1.ast.SyntaxNode;
+import rs.ac.bg.etf.pp1.ast.TermFact;
+import rs.ac.bg.etf.pp1.ast.Type;
+import rs.ac.bg.etf.pp1.ast.Var;
+import rs.ac.bg.etf.pp1.ast.VarDeclar;
+import rs.ac.bg.etf.pp1.ast.VarDeclarArr;
+import rs.ac.bg.etf.pp1.ast.VarDeclarations;
+import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Scope;
+import rs.etf.pp1.symboltable.concepts.Struct;
+
+public class SemanticPass extends VisitorAdaptor {
+
+	public static Struct boolType = Tab.insert(Obj.Type, "bool", new Struct(Struct.Bool)).getType();
+	
+	
+	private Integer pomInt;
+	private Character pomChar;
+	private Boolean pomBool;
+
+	Obj currentMethod = null;
+	Scope globalScope = null;  
+	
+	int nVars;
+
+	boolean errorDetected = false, returnFound = false, voidType = false, mainFound = false, dquest = false, dquestA1 = false, dquestA2 = false;
+	private List<MyDeclaration> declarationList = new ArrayList<MyDeclaration>();
+	private Obj program = null;
+	
+	private static Logger log = Logger.getLogger("info");
+	private static Logger loge = Logger.getLogger("error");
+
+	boolean getErrorDetected() {
+		return errorDetected;
+	}
+
+	Obj getProgram() {
+		return program;
+	}
+
+	public void report_info(String message, SyntaxNode info) {
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		log.info(msg.toString());
+	}
+
+	public void report_error(String message, SyntaxNode info) {
+		errorDetected = true;
+		StringBuilder msg = new StringBuilder(message);
+		int line = (info == null) ? 0 : info.getLine();
+		if (line != 0)
+			msg.append(" na liniji ").append(line);
+		loge.error(msg.toString());
+	}
+	
+	public void visit(ProgName progName) {
+		program = progName.obj = Tab.insert(Obj.Prog, progName.getProgName(), Tab.noType);
+		Tab.openScope();
+		globalScope = Tab.currentScope();		
+	}
+
+	public void visit(Program program) {
+		nVars = Tab.currentScope.getnVars();
+		Tab.chainLocalSymbols(program.getProgName().obj);
+		Tab.closeScope();
+		
+		if (!mainFound) {
+			report_error("Semanticka greska: U programu mora postojati metoda main!", null);
+		}
+	}
+
+	
+	public void visit(Type type) {
+		Obj typeNode = Tab.find(type.getNameType());
+		if (typeNode == Tab.noObj) {
+			report_error("Tip " + type.getNameType() + "nije pronadjen u tabeli simbola! ", null);
+			type.struct = Tab.noType;
+		} else {
+			if (Obj.Type == typeNode.getKind()) {
+				type.struct = typeNode.getType();
+			} else {
+				report_error("Semanticka greska: " + type.getNameType() + " ne predstavlja tip!", type);
+				type.struct = Tab.noType;
+			}
+		}
+	}
+
+	
+	public void visit(VarDeclarations varDeclars) {
+		for (MyDeclaration dec : declarationList) {
+			String name = dec.name;
+			if (dec.isarray == false) {
+				Obj ret = Tab.insert(Obj.Var, dec.name, varDeclars.getType().struct);
+				if (Tab.currentScope() != globalScope)
+					report_info("Deklarisana lokalna promenljiva " + dec.name  , varDeclars);
+				else
+					report_info("Deklarisana globalna promenljiva " + dec.name, varDeclars);
+				ret.setFpPos(0);
+			} else {
+				Obj ret = Tab.insert(Obj.Var, dec.name, new Struct(Struct.Array, varDeclars.getType().struct));
+				if (Tab.currentScope() != globalScope)
+					report_info("Deklarisan lokalni niz " + dec.name, varDeclars);
+				else
+					report_info("Deklarisan globalni niz " + dec.name, varDeclars);
+				ret.setFpPos(0);
+			}
+		}
+		declarationList.clear();
+	}
+	
+	public void visit(VarDeclarArr varDeclArr) {
+		if (Tab.find(varDeclArr.getVarArrName()) == Tab.noObj) { // findSym - null
+			String pname = varDeclArr.getVarArrName();
+			for (MyDeclaration dec : declarationList) {
+				if (dec.getName().equals(pname)) {
+					report_error("Semanticka greska: " + varDeclArr.getVarArrName() + " je vec deklarisano", varDeclArr);
+				}
+			}
+			declarationList.add(new MyDeclaration(varDeclArr.getVarArrName(), true));
+		} else {
+			report_error("Semanticka greska: " + varDeclArr.getVarArrName() + " je vec deklarisano", varDeclArr);
+		}
+	}
+
+	public void visit(VarDeclar varDecl) {
+		if (Tab.find(varDecl.getVarName()) == Tab.noObj) {
+			String pname = varDecl.getVarName();
+			for (MyDeclaration dec : declarationList) {
+				if (dec.getName().equals(pname)) {
+					report_error("Semanticka greska:" + varDecl.getVarName() + " je vec deklarisano", varDecl);
+				}
+			}
+			declarationList.add(new MyDeclaration(varDecl.getVarName(), false));
+		} else {
+			report_error("Semanticka greska: " + varDecl.getVarName() + " je vec deklarisano", varDecl);
+		}
+	}
+
+
+	public void visit(ConstDeclarations constDeclars) {
+		for (MyDeclaration dec : declarationList) {
+			if (dec.type == constDeclars.getType().struct) {
+				Obj ret = Tab.insert(Obj.Con, dec.name, constDeclars.getType().struct);
+			
+				if (constDeclars.getType().struct == Tab.charType)
+					ret.setAdr(dec.chval);
+				else if (constDeclars.getType().struct == Tab.intType)
+					ret.setAdr(dec.intval);
+				else if (constDeclars.getType().struct == boolType)
+					ret.setAdr(dec.boolval ? 1 : 0);
+
+				ret.setLevel(0);
+				report_info("Deklarisana konstanta " + dec.name, constDeclars);
+			} 
+		}
+		declarationList.clear();
+	}
+
+	
+
+	public void visit(ConstDeclar constDecl) {
+		Obj ret = Tab.find(constDecl.getNameConst()); 
+		if (ret == Tab.noObj) {
+			if (constDecl.getConstTypeDeclaration().struct == Tab.charType)
+				declarationList.add(new MyDeclaration(constDecl.getNameConst(), constDecl.getConstTypeDeclaration().struct, pomChar));
+			else if (constDecl.getConstTypeDeclaration().struct == Tab.intType)
+				declarationList.add(new MyDeclaration(constDecl.getNameConst(), constDecl.getConstTypeDeclaration().struct, pomInt));
+			else if (constDecl.getConstTypeDeclaration().struct == boolType)
+				declarationList.add(new MyDeclaration(constDecl.getNameConst(), constDecl.getConstTypeDeclaration().struct, pomBool));
+		} else {
+			report_error("Semanticka greska: " + constDecl.getNameConst() + " je vec deklarisano", constDecl);
+		}
+	}
+
+	public void visit(ConstDeclarNum constDeclNum) {
+		constDeclNum.struct = Tab.intType;
+		pomInt = constDeclNum.getNumberConst();
+	}
+
+	public void visit(ConstDeclarChar constDeclChar) {
+		constDeclChar.struct = Tab.charType;
+		pomChar = constDeclChar.getCharConst();
+	}
+	
+	public void visit(ConstDeclarBool constDeclBool) {
+		constDeclBool.struct = boolType;
+		pomBool = constDeclBool.getBoolConst();
+	}
+	
+	public void visit(ConstNum constN) {
+		constN.struct = Tab.intType;
+	}
+
+	public void visit(ConstChar constC) {
+		constC.struct = Tab.charType;
+	}
+
+	public void visit(ConstBool constB) {
+		constB.struct = boolType;
+	}
+	
+	public void visit(MethodDecl methDecl) {
+		if (!returnFound) {
+			report_error("Semanticka greska: Metoda " + currentMethod.getName() + " nema return iskaz",
+					null);
+		}
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+		report_info("Zavrsetak obrade metode " + currentMethod.getName(), methDecl);
+		returnFound = false;
+		currentMethod = null;
+	}
+
+
+	public void visit(MethodV methVoid) {
+		
+		String name = methVoid.getNameMeth();
+		currentMethod = Tab.insert(Obj.Meth, name, Tab.noType);
+		methVoid.obj = currentMethod;
+		Tab.openScope();
+
+		returnFound = true;
+		voidType = true;
+		
+		if (name.equals("main"))
+			mainFound = true; 
+
+		report_info("Obrada metode " + methVoid.getNameMeth() + " bez povratne vrednosti", methVoid);
+	}
+
+	public void visit(MethodT methType) {
+		String name = methType.getNameMeth();
+		Type type = methType.getType();
+		currentMethod = Tab.insert(Obj.Meth, name, type.struct);
+		methType.obj = currentMethod;
+		Tab.openScope();
+
+		voidType = false;
+		
+		if (name.equals("main"))
+			report_error("Metoda main() ne moze da ima povratnu vrednost", methType);
+		else
+			report_info("Obrada metode " + methType.getNameMeth() + " s povratnom vrednoscu", methType);
+	}
+		
+	public void visit(ReturnExpr retExpr) {
+		returnFound = true;
+		if (!currentMethod.getType().compatibleWith(retExpr.getExpr().struct)) {
+			report_error("Greska na liniji " + retExpr.getLine()
+					+ " : Tip povratne vrednosti metode i tip izraza u return se ne slazu"
+					+ currentMethod.getName(), null);
+		}
+	}
+
+	public void visit(ReturnNoExpr retNoExpr) {
+		returnFound = true;
+	}
+	
+	public void visit(FormParam formPar) {
+		
+		if (currentMethod.getName().equals("main")) {
+			report_error("Semanticka greska: Metoda main() ne moze da ima parametre ", formPar);
+		}
+		if (Tab.find(formPar.getFormPar()) == Tab.noObj) {
+			Obj ins = Tab.insert(Obj.Var, formPar.getFormPar(), formPar.getType().struct);
+			ins.setFpPos(currentMethod.getLevel());
+			currentMethod.setLevel(currentMethod.getLevel() + 1);
+			report_info("Obradjen parametar metode " + currentMethod.getName(), formPar);
+		} else {
+			report_error("Semanticka greska: " + formPar.getFormPar() + " je vec deklarisano", formPar);
+		}
+	}
+
+	public void visit(FormParamArr formParArr) {
+		if (currentMethod.getName().equals("main")) {
+			report_error("Semanticka greska: Metoda main() ne moze da ima parametre ", formParArr);
+		}
+		if (Tab.find(formParArr.getArrFormPar()) == Tab.noObj) {
+			Obj ins = Tab.insert(Obj.Var, formParArr.getArrFormPar(), new Struct(Struct.Array, formParArr.getType().struct));
+			ins.setFpPos(currentMethod.getLevel());
+			currentMethod.setLevel(currentMethod.getLevel() + 1);
+			report_info("Obradjen parametar metode " + currentMethod.getName(), formParArr);
+		} else {
+			report_error("Semanticka greska: " + formParArr.getArrFormPar() + " je vec deklarisano", formParArr);
+		}
+	}
+	
+	public void visit(ParenExpr parExpr) {
+		parExpr.struct = parExpr.getExpr().struct;
+	}
+
+	public void visit(NewTypeArr newArr) {
+		if (newArr.getExpr().struct != Tab.intType) {
+			report_info(" ", null);
+			report_error("Semantica greska: Tip za alociranje niza mora biti int", newArr);
+			newArr.struct = new Struct(Struct.Array, newArr.getType().struct); 
+		} else {
+			newArr.struct = new Struct(Struct.Array, newArr.getType().struct);
+		}
+	}
+
+	public void visit(Var v) {
+		v.struct = v.getDesignator().obj.getType();
+	}
+		
+	public void visit(TermFact termF) {
+		termF.struct = termF.getFactor().struct;
+	}
+	
+	public void visit(NormalExpression normExpr) {
+		
+		if(dquestA2) {
+			if (normExpr.getTerm().struct != Tab.intType) dquestA1 = false;
+			else dquestA1 = true;			
+		}
+		
+		normExpr.struct = normExpr.getTerm().struct;
+	}
+
+	public void visit(MinusExpression minExpr) {
+		minExpr.struct = minExpr.getTerm().struct;
+	}
+	
+	
+	public void visit(DesignatorI desigI) {
+		Obj ret = Tab.find(desigI.getDesigName());
+		if (ret == Tab.noObj) {
+			report_error("Semanticka greska:" + desigI.getDesigName() + " nije deklarisano! ",
+					null);
+		}
+		report_info("Upotreba (" + ret.getName() + ") : ", desigI);
+		desigI.obj = ret;
+	}
+
+	public void visit(DesignatorEx desigEx) {
+		Obj ret = Tab.find(desigEx.getDesigName());
+		if (ret == Tab.noObj) {
+			report_error("Semanticka greska: " + desigEx.getDesigName() + " nije deklarisano! ",
+					null);
+		}
+		if (desigEx.getExpr().struct != Tab.intType) {
+			report_error("Semanticka greska: Indeks niza mora biti int"
+					+ desigEx.getDesigName(), desigEx);
+		} else if (ret.getType().getKind() != Struct.Array) {
+			report_error("Semanticka greska: " + desigEx.getDesigName() + " mora biti niz ", desigEx);
+		}
+		report_info("Upotreba  (" + ret.getName() + ") : ", desigEx);
+		desigEx.obj = new Obj(Obj.Elem, ret.getName(), ret.getType().getElemType());
+		if(ret.getFpPos()==1) {
+			desigEx.obj.setFpPos(1);
+		} else desigEx.obj.setFpPos(0);
+	}
+
+	public void visit(ExprOne exOne) {
+		exOne.struct = exOne.getExpr1().struct;
+	}
+	
+	public void visit(LeftQuest lQuest) {
+		lQuest.struct = lQuest.getExpr1().struct;
+	}
+	
+	public void visit(RightQuest rQuest) {
+		rQuest.struct = rQuest.getExpr1().struct;
+	}
+	
+	public void visit(DsgStmtEqual dsgEq) {
+			
+		if(dquest) {
+			if(!dquestA1 || !dquestA2) {		
+				report_error("Semanticka greska: Tipovi moraju biti int pri koriscenju operatora ??", null);
+				}
+		}
+
+		if (!dsgEq.getExpr().struct.assignableTo(dsgEq.getDesignator().obj.getType())) {
+			report_error("Semanticka greska: Nekompatibilni tipovi u dodeli vrednosti! ", null);
+		}
+	}
+
+	public void visit(DsgStmtInc dsgInc) {
+		if (dsgInc.getDesignator().obj.getType() != Tab.intType && dsgInc.getDesignator().obj.getKind() != Obj.Elem) {
+			report_error("Semanticka greska: Tip operatora ++ mora biti ceo broj ili el. niza! ", null);
+		}
+	}
+
+	public void visit(DsgStmtDec dsgDec) {
+		if (dsgDec.getDesignator().obj.getType() != Tab.intType && dsgDec.getDesignator().obj.getKind() != Obj.Elem) {
+			report_error("Semanticka greska: Tip operatora -- mora biti ceo broj ili el. niza! ", null);
+		}
+	}
+
+	public void visit(ReadStmt readStmt) {
+		Struct type = readStmt.getDesignator().obj.getType();
+		if (type == Tab.charType || type == Tab.intType || type == boolType) {
+		} else {
+			report_error("Semanticka greska: Dozvoljeni tipovi su int, char, bool! ", null);
+		}
+	}
+
+	public void visit(PrintNumStmt printNumStmt) {
+		Struct type = printNumStmt.getExpr().struct;
+		if (type == Tab.charType || type == Tab.intType || type == boolType) {
+		} else {
+			report_error("Semanticka greska: Dozvoljeni tipovi su int, char, bool! ", null);
+		}
+	}
+
+	public void visit(PrintStmt printStmt) {
+		Struct type = printStmt.getExpr().struct;
+		if (type == Tab.charType || type == Tab.intType || type == boolType) {
+		} else {
+			report_error("Semanticka greska: Dozvoljeni tipovi su int, char, bool! ", null);
+		}
+	}
+
+	public void visit(AddopCho addOp) {
+		if (addOp.getTerm().struct != Tab.intType) {
+			report_error("Semanticka greska: Ne mogu se sabirati razliciti tipovi", null);
+		}
+	}
+	
+	public void visit(DQTerm dqTerm) {
+		
+		if (dqTerm.getLeftQ().struct != Tab.intType || dqTerm.getRightQ().struct != Tab.intType) {
+			dquestA1 = false;
+			dquestA2 = false;
+			report_error("Semanticka greska: Tip mora biti int pri koriscenju operatora ??", dqTerm);
+		}
+		else {
+			dquestA1 = true;			
+			dquestA2 = true;			
+		}
+		
+		dqTerm.struct = dqTerm.getLeftQ().struct;
+
+	}
+	
+
+	public void visit(MulopFactorCho mulOp) {
+		if (mulOp.getFactor().struct != Tab.intType) { 
+			report_error("Semanticka greska: Ne mogu se mnoziti razliciti tipovi", null);
+		}
+	}
+
+}
